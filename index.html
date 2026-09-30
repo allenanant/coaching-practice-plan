@@ -404,6 +404,17 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 .sh svg{width:26px;height:26px}
 .aud .top .tag{margin-left:auto}
 @media (max-width:1100px){.bp2,.decide,.kitcheck,.ig,.journey{grid-template-columns:1fr;gap:10px}.bp2 .arrow,.jarrow,.decide .arrow{transform:rotate(90deg);height:34px}.dbr{padding-left:0}.dbr::before{display:none}.shorts{grid-template-columns:repeat(4,1fr)}.tier{grid-template-columns:1fr}.fan{display:none}.cmp-h,.cmp-r{grid-template-columns:1.2fr 1fr 1fr}}
+
+.agenda{display:grid;grid-template-columns:1fr 1.25fr 1fr 1fr;gap:18px;align-items:start}
+.ag{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
+.ag .tag{margin-bottom:10px}
+.ag a{display:flex;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none;font-size:15.5px;font-weight:500}
+.ag .tag + a{border-top:none}
+.ag a span{color:var(--blue);font-size:13px;font-weight:700;width:22px;flex:none}
+.ag a:hover{color:var(--blue)}
+#upnext{margin-right:12px;font-size:13.5px;color:var(--muted)}
+#upnext b{color:var(--blue-d);font-weight:600}
+@media (max-width:1100px){.agenda{grid-template-columns:1fr 1fr}#upnext{display:none}}
 </style>
 </head>
 <body>
@@ -453,16 +464,16 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </header>
 
 <nav class="dots" id="dots"></nav>
-<div class="pager"><span id="count">1 / 1</span><button id="prev" aria-label="Previous"><svg class="i" viewBox="0 0 40 24" style="width:18px;height:16px"><path d="M38 12H6M14 5l-8 7 8 7" stroke-width="2.2"/></svg></button><button id="next" aria-label="Next"><svg class="i" viewBox="0 0 40 24" style="width:18px;height:16px"><use href="#arrow"/></svg></button></div>
+<div class="pager"><span id="upnext"></span><span id="count">1 / 1</span><button id="prev" aria-label="Previous"><svg class="i" viewBox="0 0 40 24" style="width:18px;height:16px"><path d="M38 12H6M14 5l-8 7 8 7" stroke-width="2.2"/></svg></button><button id="next" aria-label="Next"><svg class="i" viewBox="0 0 40 24" style="width:18px;height:16px"><use href="#arrow"/></svg></button></div>
 
 <main>
 
 <!-- COVER -->
-<section class="slide cover" data-title="Welcome">
+<section class="slide cover" data-title="Cover">
   <div class="wrap">
-    <div class="eyebrow">A plan for your coaching practice</div>
-    <h1>Your teaching, <em class="b">easy to find.</em><br>Your list, <em class="b">working for you again.</em></h1>
-    <p class="lead">A simple, phased plan. First we save you time. Then we turn the people who already know you into booked calls. Then we grow your reach with video. Always in your voice, always with your approval.</p>
+    <div class="eyebrow">Prepared by Accredited AI</div>
+    <h1>Your Coaching Practice Plan</h1>
+    <p class="lead">A plan in 3 phases: a library and chatbot, then email and Instagram, then short videos. Nothing goes out without your approval.</p>
     <div class="pillars">
       <div class="pill"><svg class="i"><use href="#search"/></svg>Phase 1 <i>Library and chatbot</i></div>
       <div class="pill"><svg class="i"><use href="#mail"/></svg>Phase 2 <i>Email and Instagram</i></div>
@@ -476,12 +487,45 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
   </div>
 </section>
 
-<!-- WHAT YOU HAVE -->
-<section class="slide" data-title="What you have">
+<!-- AGENDA -->
+<section class="slide" data-title="What we will cover">
   <div class="wrap">
-    <div class="eyebrow"><b>01</b> Where we start</div>
-    <h2>You already have <em class="b">everything we need.</em></h2>
-    <p class="lead">Decades of teaching, real answers to real questions, and a list of people who already know you. The work is to make it easy to find, easy to share, and easy to act on.</p>
+    <h2>What we will cover</h2>
+    <p class="lead">Click any item to jump to it.</p>
+    <div class="agenda mt">
+      <div class="ag"><span class="tag">Overview</span>
+        <a href="#s3"><span>1</span>What you have today</a>
+        <a href="#s4"><span>2</span>The 3 phases</a>
+      </div>
+      <div class="ag"><span class="tag">Phase 1: Library and chatbot</span>
+        <a href="#s5"><span>3</span>The searchable library</a>
+        <a href="#s6"><span>4</span>How the library works</a>
+        <a href="#s7"><span>5</span>Who can see the library</a>
+        <a href="#s8"><span>6</span>Getting your chats into the chatbot</a>
+        <a href="#s9"><span>7</span>You approve every answer</a>
+        <a href="#s10"><span>8</span>How the chatbot answers questions</a>
+        <a href="#s11"><span>9</span>Two chatbots, course and website</a>
+      </div>
+      <div class="ag"><span class="tag">Phase 2 and Phase 3</span>
+        <a href="#s12"><span>10</span>Reactivating your email list</a>
+        <a href="#s13"><span>11</span>Instagram automation</a>
+        <a href="#s14"><span>12</span>Short videos from your long videos</a>
+      </div>
+      <div class="ag"><span class="tag">Later, costs and next steps</span>
+        <a href="#s15"><span>13</span>The full growth package</a>
+        <a href="#s16"><span>14</span>How we run ads</a>
+        <a href="#s17"><span>15</span>Monthly running costs</a>
+        <a href="#s18"><span>16</span>Next steps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU HAVE -->
+<section class="slide" data-title="What you have today">
+  <div class="wrap">
+    <h2>What you have today</h2>
+    <p class="lead">Everything we need is already here. We make it easier to find and use.</p>
     <div class="grid g4 mt">
       <div class="card stat"><div class="ico"><svg class="i"><use href="#video"/></svg></div><div class="n">60+</div><div class="l">Course videos and handouts</div><div class="d">Videos, audio and PDFs on your course platform</div></div>
       <div class="card stat"><div class="ico"><svg class="i"><use href="#phone"/></svg></div><div class="n">Years</div><div class="l">Of client conversations</div><div class="d">Mostly text and WhatsApp, on your phone</div></div>
@@ -492,15 +536,14 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- ROADMAP -->
-<section class="slide" data-title="The plan">
+<section class="slide" data-title="The 3 phases">
   <div class="wrap">
-    <div class="eyebrow"><b>02</b> The plan</div>
-    <h2>Start small. <em class="b">Grow when you're happy.</em></h2>
-    <p class="lead">Each phase has one clear job. We move to the next one only when you are happy with the last.</p>
+    <h2>The 3 phases</h2>
+    <p class="lead">We start small. We move to the next phase only when you are happy.</p>
     <div class="road mt">
       <div class="phase p1">
-        <div class="num">PHASE 1</div><h3>Save your time</h3>
-        <div class="why">Your teaching, organized and answerable.</div>
+        <div class="num">PHASE 1</div><h3>Library and chatbot</h3>
+        <div class="why">Saves your time.</div>
         <ul>
           <li>Searchable library of all your videos, audio and PDFs</li>
           <li>Knowledge base built from your real answers</li>
@@ -511,8 +554,8 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
       </div>
       <div class="gate"><div class="dia"></div><span>Your approval</span></div>
       <div class="phase p2">
-        <div class="num">PHASE 2</div><h3>Bring in clients</h3>
-        <div class="why">Turn people who know you into booked calls.</div>
+        <div class="num">PHASE 2</div><h3>Email and Instagram</h3>
+        <div class="why">Brings in new clients.</div>
         <ul>
           <li>Health check and reactivation of your email list</li>
           <li>A simple page to book a call with you</li>
@@ -523,8 +566,8 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
       </div>
       <div class="gate"><div class="dia"></div><span>Your approval</span></div>
       <div class="phase p3">
-        <div class="num">PHASE 3</div><h3>Grow your reach</h3>
-        <div class="why">More people find you, every day.</div>
+        <div class="num">PHASE 3</div><h3>Short videos</h3>
+        <div class="why">More people find you.</div>
         <ul>
           <li>Short videos cut from your long videos</li>
           <li>Captions and your branding on each one</li>
@@ -534,8 +577,8 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
       </div>
       <div class="gate"><div class="dia" style="background:var(--blue-xl)"></div><span>When ready</span></div>
       <div class="phase opt">
-        <div class="num" style="color:var(--muted)">LATER, IF YOU WANT</div><h3>Full growth</h3>
-        <div class="why">Everything in one place.</div>
+        <div class="num" style="color:var(--muted)">LATER</div><h3>Full growth package</h3>
+        <div class="why">Only if you want it.</div>
         <ul>
           <li>Content planned and scripted for you</li>
           <li>Website and Google / AI search visibility</li>
@@ -549,10 +592,10 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- LIBRARY -->
-<section class="slide" data-title="Phase 1: Library">
+<section class="slide" data-title="Phase 1: Searchable library">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> Your searchable library</div>
-    <h2>One simple link. <em class="b">All your teaching.</em></h2>
+    <h2><em class="b">Phase 1:</em> The searchable library</h2>
+    <p class="lead">All your videos, audio and PDFs in one place, behind one simple link.</p>
     <div class="lib mt">
       <div class="mock">
         <div class="mock-bar"><div class="d"><i></i><i></i><i></i></div><div class="url"><svg class="i"><use href="#lock"/></svg>Your teaching library</div></div>
@@ -579,7 +622,7 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
         <div class="mock-cap">Illustration with sample content</div>
       </div>
       <div>
-        <h3>Three ways to find anything</h3>
+        <h3>3 ways to search</h3>
         <div class="ways mt-s">
           <div class="way"><div class="ico"><svg class="i"><use href="#folder"/></svg></div><div><b>Browse a folder</b><p>Open "Emotional eating" and see every video, audio and PDF on it.</p></div></div>
           <div class="way"><div class="ico"><svg class="i"><use href="#search"/></svg></div><div><b>Type a keyword</b><p>Type "eating" and every related file pops up.</p></div></div>
@@ -592,10 +635,9 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="slide" data-title="How the library works">
+<section class="slide" data-title="Phase 1: How the library works">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> How it works</div>
-    <h2>Simple on the outside. <em class="b">Private on the inside.</em></h2>
+    <h2><em class="b">Phase 1:</em> How the library works</h2>
     <div class="bp2 mt">
       <div class="col">
         <div class="colh">Behind the scenes</div>
@@ -613,9 +655,9 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
       </div>
     </div>
     <div class="grid g3 mt">
-      <div class="card"><div class="ico"><svg class="i"><use href="#lock"/></svg></div><h3>Local AI, private</h3><p class="small">Your content is processed by AI on our own secure computers. It is never sent to outside AI companies.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#eye"/></svg></div><h3>Checked by people</h3><p class="small">AI suggests the tags and folders. Our team checks every file by hand so the right things come up.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#tag"/></svg></div><h3>No AI needed? Fine.</h3><p class="small">We can also build it as keyword-only search. Same simple page, even simpler behind it.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#lock"/></svg></div><h3>Private AI</h3><p class="small">Your content is processed by AI on our own secure computers. It is never sent to outside AI companies.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#eye"/></svg></div><h3>Our team checks every file</h3><p class="small">AI suggests the tags and folders. Our team checks every file by hand so the right things come up.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#tag"/></svg></div><h3>Keyword-only option</h3><p class="small">We can also build it as keyword-only search. Same simple page, even simpler behind it.</p></div>
     </div>
     <div class="cmp mt">
       <div class="cmp-h"><span></span><span>Spreadsheet</span><span class="me">Your library</span></div>
@@ -627,10 +669,9 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- WHO SEES WHAT -->
-<section class="slide" data-title="Who sees what">
+<section class="slide" data-title="Phase 1: Who can see the library">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> Who sees what</div>
-    <h2>It starts as <em class="b">yours.</em> You decide who else gets in.</h2>
+    <h2><em class="b">Phase 1:</em> Who can see the library</h2>
     <p class="lead">The library is for your own use first. If you want your clients to use it too, each client only sees what their level allows.</p>
     <div class="tiers mt">
       <div class="tier t-you"><div class="tl"><svg class="i"><use href="#user"/></svg><b>You</b></div><div class="tb" style="width:100%"><span>Everything</span></div></div>
@@ -643,11 +684,10 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- CONVERSATIONS -->
-<section class="slide" data-title="Phase 1: Your conversations">
+<section class="slide" data-title="Phase 1: Getting your chats in">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> The chatbot starts with your conversations</div>
-    <h2>Your best answers are <em class="b">already on your phone.</em></h2>
-    <p class="lead">Years of text and WhatsApp replies hold your real answers to real questions. We never log into your phone or accounts. You send them to us in a simple way.</p>
+    <h2><em class="b">Phase 1:</em> Getting your chats into the chatbot</h2>
+    <p class="lead">Your real answers are in your text and WhatsApp chats. We never log into your phone. You send the chats to us like this.</p>
     <div class="flow mt">
       <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#phone"/></svg></div><b>Open a chat</b><p>Text or WhatsApp, on your phone.</p></div>
       <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#rec"/></svg></div><b>Screen-record it</b><p>Start a screen recording and scroll slowly. That's it.</p></div>
@@ -656,19 +696,18 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
       <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#doc"/></svg></div><b>Your review</b><p>Nothing is used until you approve it.</p></div>
     </div>
     <div class="grid g3 mt">
-      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>Other ways work too</h3><p class="small">Screenshots, or an export tool if one suits your phone. We pick the easiest one for you.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><h3>This sets the timeline</h3><p class="small">How much history there is, and how we get it, decides how long this step takes. Not every client chat is long.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#video"/></svg></div><h3>One small ask</h3><p class="small">Please keep your full-length videos after making shorts. We can cut many more from the originals.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>Other options</h3><p class="small">Screenshots, or an export tool if one suits your phone. We pick the easiest one for you.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><h3>Timeline</h3><p class="small">How much history there is, and how we get it, decides how long this step takes. Not every client chat is long.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#video"/></svg></div><h3>Keep your full videos</h3><p class="small">Please keep your full-length videos after making shorts. We can cut many more from the originals.</p></div>
     </div>
   </div>
 </section>
 
 <!-- APPROVAL -->
-<section class="slide" data-title="Your approval">
+<section class="slide" data-title="Phase 1: You approve every answer">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> You approve every answer</div>
-    <h2>A simple Word document. <em class="b">You have the final say.</em></h2>
-    <p class="lead">We send small batches in a Word document. Each question shows the exact answer the chatbot will give. You check it sounds like you and is correct, then choose.</p>
+    <h2><em class="b">Phase 1:</em> You approve every answer</h2>
+    <p class="lead">We send you a Word document with questions and the answers the chatbot will give. You mark each one.</p>
     <div class="wdoc mt">
       <div class="wdoc-bar"><div class="wlogo">W</div><b>Knowledge base review: Batch 03</b><small>Version 1</small></div>
       <div class="wdoc-body">
@@ -687,11 +726,10 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- HOW CHATBOT ANSWERS -->
-<section class="slide" data-title="How the chatbot answers">
+<section class="slide" data-title="Phase 1: How the chatbot answers">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> How the chatbot answers</div>
-    <h2>Only your knowledge. <em class="b">Never the internet.</em></h2>
-    <p class="lead">The chatbot works only from the knowledge base you approved. It never looks things up on Google or the web. And it is built to keep running costs very low.</p>
+    <h2><em class="b">Phase 1:</em> How the chatbot answers questions</h2>
+    <p class="lead">It only uses answers you approved. It never searches Google or the web.</p>
     <div class="decide mt">
       <div class="dq"><div class="ico"><svg class="i"><use href="#chat"/></svg></div><b>A question comes in</b><small>"Should I eat this?"</small></div>
       <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
@@ -702,19 +740,18 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
       </div>
     </div>
     <div class="grid g3 mt">
-      <div class="card"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>No web, no Google</h3><p class="small">Every answer comes from your own teaching. Nothing from outside.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#coin"/></svg></div><h3>Built to cost little</h3><p class="small">Most chatbots charge for every question. Yours reuses saved answers, so most questions cost nothing to answer.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>Grows with you</h3><p class="small">New lesson or new file? Send it to us. We add it to the knowledge base and check it works.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>Only your teaching</h3><p class="small">Every answer comes from your own teaching. Nothing from outside.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#coin"/></svg></div><h3>Low running cost</h3><p class="small">Most chatbots charge for every question. Yours reuses saved answers, so most questions cost nothing to answer.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>Adding new files</h3><p class="small">New lesson or new file? Send it to us. We add it to the knowledge base and check it works.</p></div>
     </div>
   </div>
 </section>
 
 <!-- TWO CHATBOTS -->
-<section class="slide" data-title="Two chatbots">
+<section class="slide" data-title="Phase 1: Two chatbots">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> One knowledge base, two doors</div>
-    <h2>A chatbot for your course, <em class="b">and one for your website.</em></h2>
-    <p class="lead">Both use the same knowledge base. The course one sees all of it. The website one sees only a smaller, public-safe part.</p>
+    <h2><em class="b">Phase 1:</em> Two chatbots, course and website</h2>
+    <p class="lead">Both use the same knowledge base. The course chatbot uses all of it. The website chatbot uses a smaller part.</p>
     <div class="asst mt">
       <div class="kb">
         <h3>Your knowledge base</h3>
@@ -731,19 +768,18 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
         <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>Website chatbot</h3><span class="tag">Smaller, public</span></div><p>For new visitors. Uses only answers you are happy to share publicly, and invites them to book a call.</p></div>
       </div>
     </div>
-    <div class="note mt"><svg class="i"><use href="#chat"/></svg><div><b>Your call:</b> what should the website chatbot cover? Tell us, and we shape its knowledge to match.</div></div>
+    <div class="note mt"><svg class="i"><use href="#chat"/></svg><div><b>To decide:</b> what should the website chatbot cover? Tell us, and we shape its knowledge to match.</div></div>
   </div>
 </section>
 
 <!-- EMAIL -->
-<section class="slide" data-title="Phase 2: Email">
+<section class="slide" data-title="Phase 2: Email list">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 2</b> Wake up your email list</div>
-    <h2>400 people already know you. <em class="b">Let's say hello.</em></h2>
-    <p class="lead">This is where new clients come from first. People on your list have been in touch with you before.</p>
+    <h2><em class="b">Phase 2:</em> Reactivating your email list</h2>
+    <p class="lead">Your 400 contacts already know you. This is where new clients come from first.</p>
     <div class="kitcheck mt">
       <div class="kc">
-        <h3>Step 1: Health check on your Kit account</h3>
+        <h3>Step 1: Check your Kit account</h3>
         <ul class="ticks mt-s">
           <li>Is your domain connected properly?</li>
           <li>Are emails landing in inboxes, or in spam?</li>
@@ -755,7 +791,7 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
         <div class="kopt alt"><svg class="i"><use href="#refresh"/></svg><div><b>Not healthy?</b><small>We move to Brevo or Mailchimp. 400 contacts fit their cheapest plan.</small></div></div>
       </div>
     </div>
-    <h3 class="mt">Step 2: The journey</h3>
+    <h3 class="mt">Step 2: Emails lead to booked calls</h3>
     <div class="journey mt-s">
       <div class="jn"><svg class="i"><use href="#mail"/></svg><b>Warm emails</b><small>Approved by you</small></div>
       <div class="jarrow"><svg class="i"><use href="#arrow"/></svg></div>
@@ -770,11 +806,10 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- INSTAGRAM -->
-<section class="slide" data-title="Phase 2: Instagram">
+<section class="slide" data-title="Phase 2: Instagram automation">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 2</b> Instagram automation</div>
-    <h2>Every like, comment and follow <em class="b">can start a conversation.</em></h2>
-    <p class="lead">Automations reply for you in seconds, share something useful, and gently lead people toward a call. Built with a tool like ManyChat or GoHighLevel.</p>
+    <h2><em class="b">Phase 2:</em> Instagram automation</h2>
+    <p class="lead">Automatic DMs when someone comments or follows, leading them toward a call. Built with ManyChat or GoHighLevel.</p>
     <div class="ig mt">
       <div class="phone">
         <div class="ph-top"><b>Comment automation</b></div>
@@ -804,10 +839,9 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- VIDEO -->
-<section class="slide" data-title="Phase 3: Video">
+<section class="slide" data-title="Phase 3: Short videos">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 3</b> Short videos</div>
-    <h2>One long video. <em class="b">Many short ones.</em></h2>
+    <h2><em class="b">Phase 3:</em> Short videos from your long videos</h2>
     <p class="lead">We cut your long videos into short, clear clips with captions and your branding. We do this today for a podcast client: 20 to 60 minute episodes turned into daily shorts.</p>
     <div class="l2s mt">
       <div class="lbar"><span class="lt">Your 45-minute video</span>
@@ -825,19 +859,18 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
       </div>
     </div>
     <div class="grid g3 mt">
-      <div class="card"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>A full editing team</h3><p class="small">In-house editors plus trusted contract editors. Around 30 videos a week is easy, and more is possible.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><h3>Our advice: one a day</h3><p class="small">About 30 a month. The more you post, the more views, and the more people find their way to you.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><h3>Professional tools</h3><p class="small">Adobe Premiere Pro, After Effects and DaVinci Resolve. You approve every clip before it goes out.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>Our editing team</h3><p class="small">In-house editors plus trusted contract editors. Around 30 videos a week is easy, and more is possible.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><h3>How many videos</h3><p class="small">About 30 a month. The more you post, the more views, and the more people find their way to you.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><h3>Editing tools</h3><p class="small">Adobe Premiere Pro, After Effects and DaVinci Resolve. You approve every clip before it goes out.</p></div>
     </div>
   </div>
 </section>
 
 <!-- FULL GROWTH -->
-<section class="slide" data-title="Later: Full growth">
+<section class="slide" data-title="Later: Full growth package">
   <div class="wrap">
-    <div class="eyebrow"><b>Later, if you want</b> Full growth</div>
-    <h2>When you're ready, <em class="b">everything in one place.</em></h2>
-    <p class="lead">No need to hire a second agency later. When the first phases are working, we can take on the rest.</p>
+    <h2><em class="b">Later:</em> The full growth package</h2>
+    <p class="lead">Optional. Once the first phases work, we can handle all your marketing in one place.</p>
     <div class="grid g3 mt">
       <div class="card"><div class="ico"><svg class="i"><use href="#clip"/></svg></div><h3>30 pieces of content a month</h3><p class="small">Ideas, scripts and editing, all done for you.</p></div>
       <div class="card"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>Website, SEO and AI search</h3><p class="small">A website built for you, found on Google and in AI answers.</p></div>
@@ -850,11 +883,10 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- ADS -->
-<section class="slide" data-title="How ads are managed">
+<section class="slide" data-title="Later: How we run ads">
   <div class="wrap">
-    <div class="eyebrow"><b>Later, if you want</b> How we run ads</div>
-    <h2>Ads are watched <em class="b">every single day.</em></h2>
-    <p class="lead">Ads are never "set and forget". A performance marketer checks every account daily and acts fast, so no money is wasted.</p>
+    <h2><em class="b">Later:</em> How we run ads</h2>
+    <p class="lead">A performance marketer checks your ads every day and stops anything that wastes money.</p>
     <div class="flow mt">
       <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#ad"/></svg></div><b>Launch</b><p>Test videos go live as ads.</p></div>
       <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#eye"/></svg></div><b>Check daily</b><p>Cost per lead, cost per view, page conversions.</p></div>
@@ -864,19 +896,18 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
     </div>
     <div class="loop" style="width:84%"><span>Repeat, every day</span></div>
     <div class="grid g3 mt">
-      <div class="card"><div class="ico"><svg class="i"><use href="#eye"/></svg></div><h3>You can see everything</h3><p class="small">We add you to your own ad account, so you can check leads, cost and spend any day.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#eye"/></svg></div><h3>Access to your ad account</h3><p class="small">We add you to your own ad account, so you can check leads, cost and spend any day.</p></div>
       <div class="card"><div class="ico"><svg class="i"><use href="#doc"/></svg></div><h3>Weekly reports</h3><p class="small">Plain-English reports every week, plus a WhatsApp group for quick answers.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#coin"/></svg></div><h3>Budget sets the pace</h3><p class="small">For example, $2,000 a month on Meta tests 3 to 4 videos at a time. A bigger budget tests more.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#coin"/></svg></div><h3>Ad budget</h3><p class="small">For example, $2,000 a month on Meta tests 3 to 4 videos at a time. A bigger budget tests more.</p></div>
     </div>
   </div>
 </section>
 
 <!-- COSTS -->
-<section class="slide" data-title="Running costs">
+<section class="slide" data-title="Monthly running costs">
   <div class="wrap">
-    <div class="eyebrow"><b>Good to know</b> Tools and running costs</div>
-    <h2>Your accounts, <em class="b">paid directly by you.</em></h2>
-    <p class="lead">Every tool is paid from your own account. So everything keeps running, and stays yours, no matter what.</p>
+    <h2>Monthly running costs</h2>
+    <p class="lead">Tool costs, paid from your own accounts. They keep running even if we ever stop working together.</p>
     <div class="card costs mt">
       <div class="cost"><div class="ico"><svg class="i"><use href="#server"/></svg></div><div><b>Library hosting</b><span class="tag" style="margin-left:8px">Phase 1</span><p>Cloudflare file storage plus a private server (VPS, e.g. Hostinger). The same setup also runs your chatbot.</p></div><div class="amt">$25 to $50<small>per month, estimate</small></div></div>
       <div class="cost"><div class="ico"><svg class="i"><use href="#bot"/></svg></div><div><b>Chatbot AI usage</b><span class="tag" style="margin-left:8px">Phase 1</span><p>Saved answers cost nothing per question. Only new questions use a low-cost or free AI model.</p></div><div class="amt txt">Kept very low</div></div>
@@ -892,10 +923,9 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 <!-- NEXT -->
 <section class="slide" data-title="Next steps">
   <div class="wrap">
-    <div class="eyebrow"><b>Next</b> A few quick choices</div>
     <div class="care">
       <div>
-        <h2>Help us <em class="b">shape it to you.</em></h2>
+        <h2>Next steps</h2>
         <div class="next mt">
           <div class="nx"><div><b>Library: just for you, or for your clients too?</b><p>If clients, which levels should see what.</p></div></div>
           <div class="nx"><div><b>Chatbot: what should the website version cover?</b><p>The course version uses everything you approve.</p></div></div>
@@ -905,7 +935,7 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
         </div>
       </div>
       <div class="closer">
-        <div class="eyebrow" style="color:#BFD3FF">Where we begin</div>
+        <div class="eyebrow" style="color:#BFD3FF">We start with</div>
         <h2>Phase 1: your library and your chatbot.</h2>
         <p>We start small, show you the result, and move to your email list and Instagram only when you're happy.</p>
       </div>
@@ -924,7 +954,7 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
   const count=document.getElementById('count');
   slides.forEach((s,i)=>{s.id=s.id||('s'+(i+1));const a=document.createElement('a');a.href='#'+s.id;a.innerHTML='<span>'+(s.dataset.title||('Slide '+(i+1)))+'</span>';dots.appendChild(a);});
   const links=[...dots.children];let cur=0;
-  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting&&e.intersectionRatio>.45){cur=slides.indexOf(e.target);links.forEach((l,j)=>l.classList.toggle('on',j===cur));count.textContent=(cur+1)+' / '+slides.length;}})},{threshold:[.45,.6]});
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting&&e.intersectionRatio>.45){cur=slides.indexOf(e.target);links.forEach((l,j)=>l.classList.toggle('on',j===cur));count.textContent=(cur+1)+' / '+slides.length;const nx=slides[cur+1];document.getElementById('upnext').innerHTML=nx?'Up next: <b>'+nx.dataset.title+'</b>':'';}})},{threshold:[.45,.6]});
   slides.forEach(s=>io.observe(s));
   const go=i=>{i=Math.max(0,Math.min(slides.length-1,i));slides[i].scrollIntoView({behavior:'smooth'});};
   document.getElementById('next').onclick=()=>go(cur+1);
