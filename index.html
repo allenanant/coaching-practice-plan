@@ -322,6 +322,88 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 }
 @media (max-width:640px){.g2,.g4,.seq,.metrics{grid-template-columns:1fr}.mock-body{grid-template-columns:1fr}.mock-side{display:none}.cost{grid-template-columns:44px 1fr}.cost .amt{grid-column:2;text-align:left}}
 @media print{.topbar,.dots,.pager{display:none}.slide{min-height:auto;page-break-after:always}}
+
+/* v2 components */
+.ways{display:grid;gap:12px}
+.way{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow)}
+.way .ico{margin:0;flex:none}.way b{display:block;font-size:16px}.way p{font-size:14px;color:var(--muted)}
+.bp2{display:grid;grid-template-columns:1.25fr 56px 1fr 56px 1fr;align-items:center}
+.bp2 .col{display:grid;gap:10px}
+.bp2 .colh{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--soft);margin-bottom:2px}
+.bp2 .chip{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;font-weight:500;box-shadow:var(--shadow)}
+.bp2 .chip svg{color:var(--blue)}
+.chip.tall{align-items:flex-start}.chip.tall b{display:block;font-size:15.5px}.chip.tall small{display:block;font-size:13px;color:var(--muted);font-weight:400;margin-top:2px}
+.cmp{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.cmp-h,.cmp-r{display:grid;grid-template-columns:1.6fr 1fr 1.3fr}
+.cmp-h span{padding:10px 16px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);background:var(--sky)}
+.cmp-h .me{color:var(--blue-d)}
+.cmp-r span{padding:11px 16px;font-size:14.5px;border-top:1px solid var(--line)}
+.cmp-r .no{color:var(--red)}.cmp-r .yes{color:var(--ok);font-weight:600;background:#F6FBF8}
+.tiers{display:grid;gap:12px;max-width:1040px}
+.tier{display:grid;grid-template-columns:190px 1fr;align-items:center;gap:16px}
+.tl{display:flex;align-items:center;gap:10px}.tl svg{color:var(--blue)}
+.tb{height:54px;border-radius:12px;background:#3B6FEA;display:flex;align-items:center;padding:0 18px;color:#fff;font-weight:600;font-size:14.5px;box-shadow:var(--shadow);white-space:nowrap}
+.t-you .tb{background:linear-gradient(90deg,var(--blue),var(--blue-d))}
+.tier:nth-child(3) .tb{background:#5C8DF6}.tier:nth-child(4) .tb{background:#93B4FF;color:var(--ink)}
+.wdoc{border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 24px 50px rgba(18,50,154,.10);overflow:hidden}
+.wdoc-bar{display:flex;align-items:center;gap:12px;padding:12px 18px;background:#2B579A;color:#fff}
+.wlogo{width:26px;height:26px;border-radius:6px;background:#fff;color:#2B579A;font-weight:800;display:grid;place-items:center;font-size:14px}
+.wdoc-bar small{margin-left:auto;color:#D6E2FF}
+.wdoc-body{padding:6px 18px 10px;overflow-x:auto}
+.wrow{display:grid;grid-template-columns:34px 1.2fr 1.5fr 150px 1.1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px;align-items:center;min-width:760px}
+.wrow:last-child{border-bottom:none}
+.wrow span:nth-child(3){color:var(--muted);font-style:italic}
+.wh span{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--soft) !important;font-style:normal !important}
+.wrow i{font-style:normal;font-size:12.5px;font-weight:600;border-radius:8px;padding:5px 9px;display:inline-block}
+.nt{font-size:13px;color:var(--ink2);background:#FFFBEA;border-left:3px solid #F5C451;padding:6px 8px;border-radius:4px}
+.decide{display:grid;grid-template-columns:1fr 50px 230px 1.7fr;align-items:center}
+.dq{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.dq .ico{margin-bottom:10px}.dq b{display:block}.dq small{font-style:italic}
+.dd{display:grid;place-items:center}
+.dia2{width:160px;height:160px;transform:rotate(45deg);background:linear-gradient(160deg,var(--blue),var(--blue-d));border-radius:22px;display:grid;place-items:center;box-shadow:0 18px 40px rgba(29,78,216,.28)}
+.dia2 span{transform:rotate(-45deg);color:#fff;font-weight:600;text-align:center;font-size:14.5px;width:118px;line-height:1.3}
+.dbr{display:grid;gap:14px;padding-left:30px;position:relative}
+.dbr::before{content:"";position:absolute;left:4px;top:24%;bottom:24%;width:18px;border:2px solid var(--blue-xl);border-right:none;border-radius:12px 0 0 12px}
+.db{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow)}
+.db .lab{flex:none;width:46px;height:28px;border-radius:999px;display:grid;place-items:center;font-size:12.5px;font-weight:700}
+.db.yes{border-color:#BFE8D6}.db.yes .lab{background:var(--ok-bg);color:var(--ok)}
+.db.no .lab{background:var(--amber-bg);color:var(--amber)}
+.db b{display:block;font-size:15.5px}.db small{display:block}
+.kitcheck{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;align-items:stretch}
+.kc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow)}
+.kd{display:grid;gap:12px}
+.kopt{display:flex;gap:14px;align-items:center;border-radius:16px;padding:16px 18px}
+.kopt svg{flex:none;width:26px;height:26px}.kopt b{display:block}.kopt small{display:block;font-size:13.5px}
+.kopt.good{background:var(--ok-bg);color:var(--ok)}.kopt.good small{color:#2F6B55}
+.kopt.alt{background:var(--sky2);color:var(--blue-d)}.kopt.alt small{color:var(--ink2)}
+.journey{display:grid;grid-template-columns:1fr 36px 1fr 36px 1fr 36px 1fr;align-items:center}
+.jn{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center;box-shadow:var(--shadow)}
+.jn svg{color:var(--blue);margin:0 auto 6px;display:block}.jn b{display:block;font-size:15px}.jn small{font-size:12.5px}
+.jn.hl{background:linear-gradient(160deg,var(--blue),var(--blue-d));border-color:transparent}.jn.hl *{color:#fff !important}
+.jarrow{display:grid;place-items:center;color:var(--blue-xl)}.jarrow svg{width:30px;height:20px}
+.nurture{margin-top:14px;display:flex;gap:12px;align-items:flex-start;padding:14px 18px;border-radius:14px;border:1.5px dashed var(--sky3);background:#fff;font-size:15px;color:var(--ink2)}.nurture svg{color:var(--blue)}
+.ig{display:grid;grid-template-columns:270px 270px 1fr;gap:28px;align-items:start}
+.phone{background:#fff;border:8px solid var(--ink);border-radius:34px;padding:16px 14px 18px;box-shadow:0 24px 50px rgba(10,26,58,.18);min-height:400px;display:flex;flex-direction:column;gap:12px}
+.phone small{margin-top:auto;font-size:12.5px;text-align:center;display:block}
+.ph-top{text-align:center;font-size:13px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.ph-post{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ph-img{height:110px;background:linear-gradient(135deg,var(--sky3),var(--sky2));display:grid;place-items:center;color:var(--blue)}.ph-img svg{width:34px;height:34px}
+.ph-cm{padding:8px 10px;font-size:13px}
+.ph-follow{display:flex;gap:10px;align-items:center;background:var(--sky);border-radius:12px;padding:12px;font-size:13px}.ph-follow svg{color:var(--blue)}
+.ph-time{text-align:center;font-size:11.5px;color:var(--soft);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.bubble{background:var(--sky2);border-radius:16px 16px 16px 4px;padding:10px 12px;font-size:13.5px;color:var(--ink)}
+.igflow{display:grid;gap:6px;align-self:center}
+.ign{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-weight:600;font-size:15px;box-shadow:var(--shadow)}.ign svg{color:var(--blue)}
+.ign.hl{background:linear-gradient(160deg,var(--blue),var(--blue-d));color:#fff;border-color:transparent}.ign.hl svg{color:#fff}
+.igd{display:grid;place-items:center;color:var(--blue-xl);height:20px}.igd svg{transform:rotate(90deg);width:26px;height:18px}
+.lbar{position:relative;height:68px;border-radius:14px;background:repeating-linear-gradient(90deg,var(--sky2) 0 2px,var(--sky) 2px 18px);border:1px solid var(--sky3);overflow:hidden}
+.lbar .lt{position:absolute;left:14px;top:7px;font-size:12px;font-weight:700;color:var(--blue-d);letter-spacing:.04em}
+.lbar i{position:absolute;bottom:9px;height:26px;border-radius:6px;background:var(--blue);box-shadow:0 4px 10px rgba(29,78,216,.3)}
+.fan svg{width:100%;height:46px;display:block}
+.shorts{display:grid;grid-template-columns:repeat(7,1fr);gap:14px}
+.sh{aspect-ratio:9/12;border-radius:14px;background:linear-gradient(170deg,var(--blue),var(--blue-d));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-size:13px;font-weight:600;box-shadow:0 12px 24px rgba(29,78,216,.22)}
+.sh svg{width:26px;height:26px}
+.aud .top .tag{margin-left:auto}
+@media (max-width:1100px){.bp2,.decide,.kitcheck,.ig,.journey{grid-template-columns:1fr;gap:10px}.bp2 .arrow,.jarrow,.decide .arrow{transform:rotate(90deg);height:34px}.dbr{padding-left:0}.dbr::before{display:none}.shorts{grid-template-columns:repeat(4,1fr)}.tier{grid-template-columns:1fr}.fan{display:none}.cmp-h,.cmp-r{grid-template-columns:1.2fr 1fr 1fr}}
 </style>
 </head>
 <body>
@@ -360,6 +442,9 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
   <symbol id="card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18M7 15h4"/></symbol>
   <symbol id="cloud" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 8.5a4.8 4.8 0 0 1-.5 9.5z"/></symbol>
   <symbol id="layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+  <symbol id="rec" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4" fill="currentColor"/></symbol>
+  <symbol id="coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.2c-.5-.8-1.5-1.2-2.5-1.2-1.4 0-2.5.8-2.5 1.9 0 2.6 5 1.4 5 4.1 0 1.1-1.1 2-2.5 2-1.1 0-2.1-.5-2.6-1.3M12 6.5V8M12 16v1.5"/></symbol>
+  <symbol id="stop" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9v6M14.5 9v6"/></symbol>
 </svg>
 
 <header class="topbar">
@@ -372,140 +457,90 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 
 <main>
 
-<!-- 1 COVER -->
-<section id="s1" class="slide cover" data-title="Welcome">
+<!-- COVER -->
+<section class="slide cover" data-title="Welcome">
   <div class="wrap">
     <div class="eyebrow">A plan for your coaching practice</div>
-    <h1>Your teaching, <em class="b">easier to find.</em><br>Your practice, <em class="b">easier to join.</em></h1>
-    <p class="lead">A phased plan to organize the knowledge you have built over decades, share your real answers with the people who need them, and open a clear path to a free consultation. Always in your voice. Always with your approval.</p>
+    <h1>Your teaching, <em class="b">easy to find.</em><br>Your list, <em class="b">working for you again.</em></h1>
+    <p class="lead">A simple, phased plan. First we save you time. Then we turn the people who already know you into booked calls. Then we grow your reach with video. Always in your voice, always with your approval.</p>
     <div class="pillars">
-      <div class="pill"><svg class="i"><use href="#search"/></svg>Find <i>your teaching in seconds</i></div>
-      <div class="pill"><svg class="i"><use href="#chat"/></svg>Share <i>your real answers</i></div>
-      <div class="pill"><svg class="i"><use href="#cal"/></svg>Book <i>more consultations</i></div>
+      <div class="pill"><svg class="i"><use href="#search"/></svg>Phase 1 <i>Library and chatbot</i></div>
+      <div class="pill"><svg class="i"><use href="#mail"/></svg>Phase 2 <i>Email and Instagram</i></div>
+      <div class="pill"><svg class="i"><use href="#clip"/></svg>Phase 3 <i>Short videos</i></div>
     </div>
     <div class="cover-meta">
-      <div><svg class="i"><use href="#shield"/></svg>Privacy first</div>
-      <div><svg class="i"><use href="#check"/></svg>Nothing publishes without your approval</div>
-      <div><svg class="i"><use href="#layers"/></svg>Start small, grow in phases</div>
+      <div><svg class="i"><use href="#shield"/></svg>Private by design</div>
+      <div><svg class="i"><use href="#check"/></svg>Nothing goes out without your approval</div>
+      <div><svg class="i"><use href="#heart"/></svg>Built for someone who is not technical</div>
     </div>
   </div>
 </section>
 
-<!-- 2 WHAT YOU HAVE -->
-<section id="s2" class="slide" data-title="What you have">
+<!-- WHAT YOU HAVE -->
+<section class="slide" data-title="What you have">
   <div class="wrap">
     <div class="eyebrow"><b>01</b> Where we start</div>
-    <h2>The knowledge is <em class="b">already here.</em></h2>
-    <p class="lead">You do not need to create more. You need what you have made to be easy to find, easy to share, and easy to act on.</p>
+    <h2>You already have <em class="b">everything we need.</em></h2>
+    <p class="lead">Decades of teaching, real answers to real questions, and a list of people who already know you. The work is to make it easy to find, easy to share, and easy to act on.</p>
     <div class="grid g4 mt">
-      <div class="card stat"><div class="ico"><svg class="i"><use href="#video"/></svg></div><div class="n">60+</div><div class="l">Course videos and handouts</div><div class="d">On your course platform today</div></div>
-      <div class="card stat"><div class="ico"><svg class="i"><use href="#chat"/></svg></div><div class="n">Years</div><div class="l">Of real client conversations</div><div class="d">5 to 6 text and WhatsApp exchanges a day</div></div>
+      <div class="card stat"><div class="ico"><svg class="i"><use href="#video"/></svg></div><div class="n">60+</div><div class="l">Course videos and handouts</div><div class="d">Videos, audio and PDFs on your course platform</div></div>
+      <div class="card stat"><div class="ico"><svg class="i"><use href="#phone"/></svg></div><div class="n">Years</div><div class="l">Of client conversations</div><div class="d">Mostly text and WhatsApp, on your phone</div></div>
       <div class="card stat"><div class="ico"><svg class="i"><use href="#users"/></svg></div><div class="n">~30</div><div class="l">Active course clients</div><div class="d">Coached one to one, worldwide</div></div>
-      <div class="card stat"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><div class="n">~400</div><div class="l">Email contacts</div><div class="d">A warm list that is resting in Kit</div></div>
-    </div>
-    <div class="note mt"><svg class="i"><use href="#heart"/></svg><div><b>What success means:</b> more clients, not more activity. We start small, prove it works, and grow only when you are happy with the results.</div></div>
-  </div>
-</section>
-
-<!-- 3 BIG PICTURE -->
-<section id="s3" class="slide" data-title="The big picture">
-  <div class="wrap">
-    <div class="eyebrow"><b>02</b> The big picture</div>
-    <h2>Two sides, <em class="b">one source of truth.</em></h2>
-    <p class="lead">The private side helps you and your current clients right away. The public side comes next, and brings new people to a free consultation.</p>
-    <div class="lanes mt">
-      <div class="lane">
-        <div class="lane-h"><span class="tag">Phase 1</span><b>Private</b><small>For you and your current clients</small></div>
-        <div class="lrow">
-          <div class="col">
-            <div class="chip"><svg class="i"><use href="#video"/></svg>Course videos</div>
-            <div class="chip"><svg class="i"><use href="#doc"/></svg>Handouts and PDFs</div>
-          </div>
-          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
-          <div class="hub sm"><div class="hubico"><svg class="i"><use href="#lock"/></svg></div><h3>Private teaching library</h3><p>Behind a login. Searchable by topic and meaning.</p></div>
-          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
-          <div class="goal wide"><div class="ico"><svg class="i"><use href="#search"/></svg></div><div><b>Any lesson found in seconds</b><small>By you and your clients, straight to the exact video moment or PDF page</small></div></div>
-        </div>
-      </div>
-      <div class="lane pub">
-        <div class="lane-h"><span class="tag">Phase 2 onward</span><b>Public</b><small>For new people who need your help</small></div>
-        <div class="lrow">
-          <div class="col">
-            <div class="chip"><svg class="i"><use href="#chat"/></svg>Client conversations, privacy-cleared</div>
-            <div class="chip"><svg class="i"><use href="#video"/></svg>Your videos</div>
-            <div class="chip"><svg class="i"><use href="#mail"/></svg>Your email list</div>
-          </div>
-          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
-          <div class="hub sm"><div class="hubico"><svg class="i"><use href="#check"/></svg></div><h3>Approved public answers</h3><p>Only what you have cleared for the public.</p></div>
-          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
-          <div class="col">
-            <div class="chip"><svg class="i"><use href="#globe"/></svg>Public Q&amp;A posts</div>
-            <div class="chip"><svg class="i"><use href="#bot"/></svg>Website chatbot</div>
-            <div class="chip"><svg class="i"><use href="#clip"/></svg>Short video clips</div>
-            <div class="chip"><svg class="i"><use href="#mail"/></svg>Warm email sequence</div>
-          </div>
-          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
-          <div class="goal"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><b>Free consultation bookings</b><small>The number that matters</small></div>
-        </div>
-      </div>
+      <div class="card stat"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><div class="n">~400</div><div class="l">Email contacts</div><div class="d">A warm list resting in Kit</div></div>
     </div>
   </div>
 </section>
 
-<!-- 4 ROADMAP -->
-<section id="s4" class="slide" data-title="The phases">
+<!-- ROADMAP -->
+<section class="slide" data-title="The plan">
   <div class="wrap">
-    <div class="eyebrow"><b>03</b> The roadmap</div>
-    <h2>Three phases, <em class="b">each one earned.</em></h2>
-    <p class="lead">Each phase starts only after you have reviewed and approved the one before it. We set the schedule together once we have seen your material.</p>
+    <div class="eyebrow"><b>02</b> The plan</div>
+    <h2>Start small. <em class="b">Grow when you're happy.</em></h2>
+    <p class="lead">Each phase has one clear job. We move to the next one only when you are happy with the last.</p>
     <div class="road mt">
       <div class="phase p1">
-        <div class="num">PHASE 1</div><h3>Foundation</h3>
-        <div class="why">Private. Make your teaching easy to find for you and your clients.</div>
+        <div class="num">PHASE 1</div><h3>Save your time</h3>
+        <div class="why">Your teaching, organized and answerable.</div>
         <ul>
-          <li>Private, searchable teaching library</li>
-          <li>Login access for you and your current clients</li>
-          <li>Folders by your teaching topics</li>
-          <li>Privacy and approval process set up</li>
-          <li>A first small batch of Q&amp;A drafts for your review</li>
+          <li>Searchable library of all your videos, audio and PDFs</li>
+          <li>Knowledge base built from your real answers</li>
+          <li>Chatbot that answers only from your knowledge base</li>
+          <li>Optional second chatbot for your website</li>
         </ul>
-        <div class="foot"><span class="tag">Starts small</span></div>
+        <div class="foot"><span class="tag">Time back for you</span></div>
       </div>
       <div class="gate"><div class="dia"></div><span>Your approval</span></div>
       <div class="phase p2">
-        <div class="num">PHASE 2</div><h3>Reach</h3>
-        <div class="why">Public. Bring your real answers to new people who need them.</div>
+        <div class="num">PHASE 2</div><h3>Bring in clients</h3>
+        <div class="why">Turn people who know you into booked calls.</div>
         <ul>
-          <li>Public Q&amp;A library, by topic</li>
-          <li>Website chatbot that only uses your approved answers</li>
-          <li>Reactivate your email list with a 4 to 5 email sequence</li>
-          <li>Email and Instagram automation</li>
-          <li>A clear path to book a free consultation</li>
+          <li>Health check and reactivation of your email list</li>
+          <li>A simple page to book a call with you</li>
+          <li>Tags and a 12-month nurture for people not ready yet</li>
+          <li>Instagram automations for comments and new followers</li>
         </ul>
-        <div class="foot"><span class="tag">Moves bookings</span></div>
+        <div class="foot"><span class="tag">Booked calls</span></div>
       </div>
       <div class="gate"><div class="dia"></div><span>Your approval</span></div>
       <div class="phase p3">
-        <div class="num">PHASE 3</div><h3>Video</h3>
-        <div class="why">Turn your long videos into short, clear clips.</div>
+        <div class="num">PHASE 3</div><h3>Grow your reach</h3>
+        <div class="why">More people find you, every day.</div>
         <ul>
-          <li>Short clips cut from your existing videos</li>
-          <li>Captions and your brand on every clip</li>
-          <li>An organized, searchable clip library</li>
-          <li>A posting rhythm you choose</li>
+          <li>Short videos cut from your long videos</li>
+          <li>Captions and your branding on each one</li>
+          <li>A daily posting rhythm, if you want it</li>
         </ul>
-        <div class="foot"><span class="tag">Grows visibility</span></div>
+        <div class="foot"><span class="tag">More reach</span></div>
       </div>
       <div class="gate"><div class="dia" style="background:var(--blue-xl)"></div><span>When ready</span></div>
       <div class="phase opt">
-        <div class="num" style="color:var(--muted)">OPTIONAL</div><h3>Growth</h3>
-        <div class="why">Only if and when you want more.</div>
+        <div class="num" style="color:var(--muted)">LATER, IF YOU WANT</div><h3>Full growth</h3>
+        <div class="why">Everything in one place.</div>
         <ul>
-          <li>Website improvements</li>
-          <li>Visibility in Google and AI search</li>
-          <li>Paid ads on Meta, Google, TikTok</li>
-          <li>Voice AI calling assistant</li>
-          <li>Email, SMS and WhatsApp campaigns</li>
+          <li>Content planned and scripted for you</li>
+          <li>Website and Google / AI search visibility</li>
+          <li>Meta, Google and TikTok ads, watched daily</li>
+          <li>Voice AI calling agent</li>
           <li>Business and marketing advice</li>
         </ul>
       </div>
@@ -513,17 +548,17 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
   </div>
 </section>
 
-<!-- 5 LIBRARY -->
-<section id="s5" class="slide" data-title="Phase 1: Your library">
+<!-- LIBRARY -->
+<section class="slide" data-title="Phase 1: Library">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> Your private teaching library</div>
-    <h2>Ask for it in your own words. <em class="b">Find it in seconds.</em></h2>
+    <div class="eyebrow"><b>Phase 1</b> Your searchable library</div>
+    <h2>One simple link. <em class="b">All your teaching.</em></h2>
     <div class="lib mt">
       <div class="mock">
-        <div class="mock-bar"><div class="d"><i></i><i></i><i></i></div><div class="url"><svg class="i"><use href="#lock"/></svg>Your private teaching library</div></div>
+        <div class="mock-bar"><div class="d"><i></i><i></i><i></i></div><div class="url"><svg class="i"><use href="#lock"/></svg>Your teaching library</div></div>
         <div class="mock-body">
           <div class="mock-side">
-            <div class="h">Topics</div>
+            <div class="h">Folders</div>
             <div class="f"><svg class="i"><use href="#folder"/></svg>Hunger<em>12</em></div>
             <div class="f"><svg class="i"><use href="#folder"/></svg>Choice<em>8</em></div>
             <div class="f"><svg class="i"><use href="#folder"/></svg>Food noise<em>9</em></div>
@@ -531,289 +566,348 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
             <div class="f"><svg class="i"><use href="#folder"/></svg>Eating boundaries<em>7</em></div>
             <div class="h" style="margin-top:14px">Types</div>
             <div class="f"><svg class="i"><use href="#video"/></svg>Videos</div>
-            <div class="f"><svg class="i"><use href="#doc"/></svg>Handouts</div>
+            <div class="f"><svg class="i"><use href="#mic"/></svg>Audio</div>
+            <div class="f"><svg class="i"><use href="#doc"/></svg>PDFs</div>
           </div>
           <div class="mock-main">
-            <div class="mock-search"><svg class="i"><use href="#search"/></svg>Show me the video where I talked about emotional eating</div>
-            <div class="res"><div class="th"><svg class="i"><use href="#play"/></svg></div><div><b>Module 4: When feelings lead to eating</b><div class="meta">Video<span>12:40</span></div><div class="ex">"...notice the feeling first, before the food..."</div></div><div class="open">Play</div></div>
-            <div class="res"><div class="th"><svg class="i"><use href="#doc"/></svg></div><div><b>Handout: Emotional eating check-in</b><div class="meta">PDF<span>Page 3</span></div></div><div class="open">Open</div></div>
-            <div class="res"><div class="th"><svg class="i"><use href="#play"/></svg></div><div><b>Live session: Stress and evening snacking</b><div class="meta">Video<span>31:05</span></div></div><div class="open">Play</div></div>
+            <div class="mock-search"><svg class="i"><use href="#search"/></svg>Show me a video where I talked about hunger</div>
+            <div class="res"><div class="th"><svg class="i"><use href="#play"/></svg></div><div><b>Module 2: Listening to real hunger</b><div class="meta">Video<span>08:15</span></div><div class="ex">"...hunger is information, not an enemy..."</div></div><div class="open">Play</div></div>
+            <div class="res"><div class="th"><svg class="i"><use href="#doc"/></svg></div><div><b>Handout: The hunger scale</b><div class="meta">PDF<span>Page 2</span></div></div><div class="open">Open</div></div>
+            <div class="res"><div class="th"><svg class="i"><use href="#mic"/></svg></div><div><b>Audio: Hunger or habit?</b><div class="meta">Audio<span>14:30</span></div></div><div class="open">Play</div></div>
           </div>
         </div>
         <div class="mock-cap">Illustration with sample content</div>
       </div>
       <div>
-        <ul class="ticks">
-          <li><span><b>One private link with a login.</b> Nothing to install. Nothing technical to learn.</span></li>
-          <li><span><b>Search by words or by meaning.</b> It finds the right idea even when the wording is different.</span></li>
-          <li><span><b>Lands on the exact moment.</b> Video timestamps and PDF page numbers.</span></li>
-          <li><span><b>Folders by your teaching topics.</b> One file can sit in many folders without copies.</span></li>
-          <li><span><b>Open everything in place.</b> Play video and audio, read PDFs and documents, view images, download originals.</span></li>
-          <li><span><b>For you and your current clients.</b> Private, behind a login. You choose who gets access.</span></li>
-        </ul>
-        <div class="mt-s"><a class="btn" href="https://allenanant.github.io/accredited-library-demo/" target="_blank" rel="noopener"><svg class="i"><use href="#eye"/></svg>See the sample library</a></div>
+        <h3>Three ways to find anything</h3>
+        <div class="ways mt-s">
+          <div class="way"><div class="ico"><svg class="i"><use href="#folder"/></svg></div><div><b>Browse a folder</b><p>Open "Emotional eating" and see every video, audio and PDF on it.</p></div></div>
+          <div class="way"><div class="ico"><svg class="i"><use href="#search"/></svg></div><div><b>Type a keyword</b><p>Type "eating" and every related file pops up.</p></div></div>
+          <div class="way"><div class="ico"><svg class="i"><use href="#chat"/></svg></div><div><b>Ask in plain words</b><p>"Show me a PDF where I talked about hunger." It finds it, with the exact page or minute.</p></div></div>
+        </div>
+        <div class="mt-s"><a class="btn" href="https://allenanant.github.io/accredited-library-demo/" target="_blank" rel="noopener"><svg class="i"><use href="#eye"/></svg>Try the sample library</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 6 HOW LIBRARY IS BUILT -->
-<section id="s6" class="slide" data-title="How we build it">
+<!-- HOW IT WORKS -->
+<section class="slide" data-title="How the library works">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> How we build it</div>
-    <h2>We do the technical work. <em class="b">You just use it.</em></h2>
-    <p class="lead">Your course material is processed on our own secure computers with locally run tools. It is not sent to outside AI services.</p>
-    <div class="flow mt">
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#folder"/></svg></div><b>Gather</b><p>We collect your course files, working with your platform contractor.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#mic"/></svg></div><b>Transcribe and read</b><p>Videos get timestamped transcripts. PDFs and scans get their text read.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#tag"/></svg></div><b>Tag and index</b><p>Topics, keywords and phrases on every file and section.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#eye"/></svg></div><b>Check by hand</b><p>A person checks every file, transcript, tag, playback and search.</p></div>
-      <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#lock"/></svg></div><b>Go live</b><p>One secure link. You test it with us before anything is final.</p></div>
+    <div class="eyebrow"><b>Phase 1</b> How it works</div>
+    <h2>Simple on the outside. <em class="b">Private on the inside.</em></h2>
+    <div class="bp2 mt">
+      <div class="col">
+        <div class="colh">Behind the scenes</div>
+        <div class="chip tall"><svg class="i"><use href="#cloud"/></svg><div><b>Secure file storage</b><small>All your videos, audio and PDFs, stored on Cloudflare</small></div></div>
+        <div class="chip tall"><svg class="i"><use href="#server"/></svg><div><b>Private AI search server</b><small>Our AI search runs on your own private server (VPS)</small></div></div>
+      </div>
+      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="hub"><div class="hubico"><svg class="i"><use href="#globe"/></svg></div><h3>One simple browser link</h3><p>Nothing to install. Log in, search, open, play.</p></div>
+      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="col">
+        <div class="colh">What you see</div>
+        <div class="chip"><svg class="i"><use href="#search"/></svg>Search box</div>
+        <div class="chip"><svg class="i"><use href="#folder"/></svg>Topic folders</div>
+        <div class="chip"><svg class="i"><use href="#play"/></svg>Play, read, download</div>
+      </div>
     </div>
     <div class="grid g3 mt">
-      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>New material later</h3><p class="small">Send us the files. We process, tag, add them to folders and check they can be found and opened.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#wrench"/></svg></div><h3>If something breaks</h3><p class="small">Tell us. We investigate and fix it. Anything bigger, like moving servers, is explained and agreed first.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#shield"/></svg></div><h3>Safe by design</h3><p class="small">Login checks on every file, HTTPS, encrypted storage and backups, two-step login for admins, virus scans, tested restores.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#lock"/></svg></div><h3>Local AI, private</h3><p class="small">Your content is processed by AI on our own secure computers. It is never sent to outside AI companies.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#eye"/></svg></div><h3>Checked by people</h3><p class="small">AI suggests the tags and folders. Our team checks every file by hand so the right things come up.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#tag"/></svg></div><h3>No AI needed? Fine.</h3><p class="small">We can also build it as keyword-only search. Same simple page, even simpler behind it.</p></div>
+    </div>
+    <div class="cmp mt">
+      <div class="cmp-h"><span></span><span>Spreadsheet</span><span class="me">Your library</span></div>
+      <div class="cmp-r"><span>Easy for a non-technical person</span><span class="no">Confusing</span><span class="yes">One search box</span></div>
+      <div class="cmp-r"><span>Finds by meaning, not just exact words</span><span class="no">No</span><span class="yes">Yes</span></div>
+      <div class="cmp-r"><span>Opens and plays the file right there</span><span class="no">No</span><span class="yes">Yes, at the exact minute or page</span></div>
     </div>
   </div>
 </section>
 
-<!-- 7 ASSISTANT -->
-<section id="s7" class="slide" data-title="Phase 2: Chatbot">
+<!-- WHO SEES WHAT -->
+<section class="slide" data-title="Who sees what">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 2</b> The website chatbot</div>
-    <h2>It answers with <em class="b">your words,</em> or not at all.</h2>
-    <p class="lead">The assistant only gives answers you have approved. It never searches the internet and never makes things up.</p>
+    <div class="eyebrow"><b>Phase 1</b> Who sees what</div>
+    <h2>It starts as <em class="b">yours.</em> You decide who else gets in.</h2>
+    <p class="lead">The library is for your own use first. If you want your clients to use it too, each client only sees what their level allows.</p>
+    <div class="tiers mt">
+      <div class="tier t-you"><div class="tl"><svg class="i"><use href="#user"/></svg><b>You</b></div><div class="tb" style="width:100%"><span>Everything</span></div></div>
+      <div class="tier"><div class="tl"><svg class="i"><use href="#users"/></svg><b>Tier 3 clients</b></div><div class="tb" style="width:75%"><span>Tier 1, 2 and 3 content</span></div></div>
+      <div class="tier"><div class="tl"><svg class="i"><use href="#users"/></svg><b>Tier 2 clients</b></div><div class="tb" style="width:50%"><span>Tier 1 and 2 content</span></div></div>
+      <div class="tier"><div class="tl"><svg class="i"><use href="#users"/></svg><b>Tier 1 clients</b></div><div class="tb" style="width:28%"><span>Tier 1 content</span></div></div>
+    </div>
+    <div class="note mt"><svg class="i"><use href="#lock"/></svg><div>A Tier 1 client can never open Tier 2 or Tier 3 material. Access is checked on every file, every time.</div></div>
+  </div>
+</section>
+
+<!-- CONVERSATIONS -->
+<section class="slide" data-title="Phase 1: Your conversations">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 1</b> The chatbot starts with your conversations</div>
+    <h2>Your best answers are <em class="b">already on your phone.</em></h2>
+    <p class="lead">Years of text and WhatsApp replies hold your real answers to real questions. We never log into your phone or accounts. You send them to us in a simple way.</p>
+    <div class="flow mt">
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#phone"/></svg></div><b>Open a chat</b><p>Text or WhatsApp, on your phone.</p></div>
+      <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#rec"/></svg></div><b>Screen-record it</b><p>Start a screen recording and scroll slowly. That's it.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#spark"/></svg></div><b>Our AI reads it</b><p>It pulls out each question and your answer, privately.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#layers"/></svg></div><b>Knowledge base</b><p>Your answers, grouped by topic, in your words.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#doc"/></svg></div><b>Your review</b><p>Nothing is used until you approve it.</p></div>
+    </div>
+    <div class="grid g3 mt">
+      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>Other ways work too</h3><p class="small">Screenshots, or an export tool if one suits your phone. We pick the easiest one for you.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><h3>This sets the timeline</h3><p class="small">How much history there is, and how we get it, decides how long this step takes. Not every client chat is long.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#video"/></svg></div><h3>One small ask</h3><p class="small">Please keep your full-length videos after making shorts. We can cut many more from the originals.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROVAL -->
+<section class="slide" data-title="Your approval">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 1</b> You approve every answer</div>
+    <h2>A simple Word document. <em class="b">You have the final say.</em></h2>
+    <p class="lead">We send small batches in a Word document. Each question shows the exact answer the chatbot will give. You check it sounds like you and is correct, then choose.</p>
+    <div class="wdoc mt">
+      <div class="wdoc-bar"><div class="wlogo">W</div><b>Knowledge base review: Batch 03</b><small>Version 1</small></div>
+      <div class="wdoc-body">
+        <div class="wrow wh"><span>#</span><span>Question</span><span>Answer the chatbot will give</span><span>Your choice</span><span>Your notes</span></div>
+        <div class="wrow"><span>12</span><span>Why do I eat when I'm not hungry?</span><span>Your answer, in your words, from your real conversations...</span><span><i class="c-ok">Approve</i></span><span class="nt">Perfect.</span></div>
+        <div class="wrow"><span>13</span><span>Is it bad to eat at night?</span><span>Your answer, in your words, from your real conversations...</span><span><i class="c-ch">Changes needed</i></span><span class="nt">Softer tone, add the hunger scale.</span></div>
+        <div class="wrow"><span>14</span><span>How do I stop thinking about food all day?</span><span>Your answer, in your words, from your real conversations...</span><span><i class="c-no">Do not use</i></span><span class="nt">Too personal.</span></div>
+      </div>
+    </div>
+    <div class="grid g3 mt">
+      <div class="note"><svg class="i"><use href="#heart"/></svg><div>Does it <b>sound like you?</b> Is it <b>correct?</b> Those are the only two questions.</div></div>
+      <div class="note"><svg class="i"><use href="#edit"/></svg><div><b>Changes needed</b> comes back to you revised, until it's right.</div></div>
+      <div class="note"><svg class="i"><use href="#shield"/></svg><div>Anything for the public is <b>made anonymous</b> or has the client's consent first.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW CHATBOT ANSWERS -->
+<section class="slide" data-title="How the chatbot answers">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 1</b> How the chatbot answers</div>
+    <h2>Only your knowledge. <em class="b">Never the internet.</em></h2>
+    <p class="lead">The chatbot works only from the knowledge base you approved. It never looks things up on Google or the web. And it is built to keep running costs very low.</p>
+    <div class="decide mt">
+      <div class="dq"><div class="ico"><svg class="i"><use href="#chat"/></svg></div><b>A question comes in</b><small>"Should I eat this?"</small></div>
+      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="dd"><div class="dia2"><span>Already in your knowledge base?</span></div></div>
+      <div class="dbr">
+        <div class="db yes"><div class="lab">Yes</div><div><b>Sends your approved answer, word for word</b><small>Instant. No AI cost for that question.</small></div></div>
+        <div class="db no"><div class="lab">No</div><div><b>A low-cost AI model answers from your material only</b><small>Or it politely says it doesn't know and offers a call. Your choice.</small></div></div>
+      </div>
+    </div>
+    <div class="grid g3 mt">
+      <div class="card"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>No web, no Google</h3><p class="small">Every answer comes from your own teaching. Nothing from outside.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#coin"/></svg></div><h3>Built to cost little</h3><p class="small">Most chatbots charge for every question. Yours reuses saved answers, so most questions cost nothing to answer.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>Grows with you</h3><p class="small">New lesson or new file? Send it to us. We add it to the knowledge base and check it works.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TWO CHATBOTS -->
+<section class="slide" data-title="Two chatbots">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 1</b> One knowledge base, two doors</div>
+    <h2>A chatbot for your course, <em class="b">and one for your website.</em></h2>
+    <p class="lead">Both use the same knowledge base. The course one sees all of it. The website one sees only a smaller, public-safe part.</p>
     <div class="asst mt">
       <div class="kb">
-        <h3>Your approved knowledge base</h3>
-        <p>Your real questions and answers, grouped by topic, each one approved by you.</p>
+        <h3>Your knowledge base</h3>
+        <p>Your approved answers and teaching, grouped by topic.</p>
         <div class="rows">
-          <div><svg class="i"><use href="#check"/></svg>Only your own answers</div>
-          <div><svg class="i"><use href="#check"/></svg>No internet, no outside sources</div>
-          <div><svg class="i"><use href="#check"/></svg>Gaps are flagged to you, never invented</div>
+          <div><svg class="i"><use href="#check"/></svg>Built from your conversations and course</div>
+          <div><svg class="i"><use href="#check"/></svg>Every answer approved by you</div>
+          <div><svg class="i"><use href="#check"/></svg>Updated when you add new material</div>
         </div>
       </div>
       <div class="fork"><svg viewBox="0 0 64 180" fill="none" stroke="#93B4FF" stroke-width="2.2" stroke-linecap="round"><path d="M2 90h22c14 0 14-55 30-55h6M24 90c14 0 14 55 30 55h6"/><path d="M54 29l7 6-7 6M54 139l7 6-7 6"/></svg></div>
       <div class="split">
-        <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>Inside: you and your clients</h3></div><p>Can also answer from your private course library. Behind a login.</p></div>
-        <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>Outside: your website visitors</h3></div><p>Uses only a smaller set of answers you have cleared for the public. Points people to a free consultation.</p></div>
+        <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#lock"/></svg></div><h3>Course chatbot</h3><span class="tag">Full knowledge</span></div><p>Inside your course, for your clients. Answers from everything you have approved.</p></div>
+        <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>Website chatbot</h3><span class="tag">Smaller, public</span></div><p>For new visitors. Uses only answers you are happy to share publicly, and invites them to book a call.</p></div>
       </div>
     </div>
-    <div class="grid g2 mt" style="align-items:center">
-      <div class="chat">
-        <div class="bub u">Is it normal to feel out of control around food at night?</div>
-        <div class="bub b"><b>From your approved answers:</b> a short answer in your own words, plus a link to the related lesson.</div>
-        <div class="bub u">Can you recommend a diet pill?</div>
-        <div class="bub b">I don't have an approved answer for that. Would you like to book a free consultation?</div>
-      </div>
-      <div class="card"><h3>Tested before it goes live</h3><ul class="ticks mt-s">
-        <li>Every approved answer, and rephrased versions of each question</li>
-        <li>Off-topic and unclear questions, which it should politely decline</li>
-        <li>Trick messages that try to make it break its rules</li>
-        <li>It can never show private client conversations</li>
-      </ul></div>
-    </div>
+    <div class="note mt"><svg class="i"><use href="#chat"/></svg><div><b>Your call:</b> what should the website chatbot cover? Tell us, and we shape its knowledge to match.</div></div>
   </div>
 </section>
 
-<!-- 8 APPROVAL -->
-<section id="s8" class="slide" data-title="Your approval">
-  <div class="wrap">
-    <div class="eyebrow"><b>Before anything goes public</b> Q&amp;A posts</div>
-    <h2>Every post passes <em class="b">two gates:</em> privacy, then you.</h2>
-    <p class="lead">We turn your real answers into website posts. Nothing goes out unless it is privacy-cleared and you have approved that exact version.</p>
-    <div class="appr mt">
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#chat"/></svg></div><b>Real conversation</b><p>Your actual answer to a real client question.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#shield"/></svg></div><b>Privacy gate</b><p>The client's consent, or enough changed that nobody can be identified. Unsure? It is held back.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#doc"/></svg></div><b>Word draft</b><p>Small batches. Each post numbered and versioned. No raw chats inside.</p></div>
-      <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#pen"/></svg></div><b>You decide</b><div class="choices"><span class="c-ok">Approve</span><span class="c-ch">Changes needed</span><span class="c-no">Do not use</span></div></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#globe"/></svg></div><b>Published</b><p>Your approval is recorded. Your website contractor publishes it.</p></div>
-    </div>
-    <div class="loop"><span>Changes needed: we revise it and send it back to you</span></div>
-    <div class="grid g3 mt">
-      <div class="note"><svg class="i"><use href="#user"/></svg><div>Removing a name is <b>not</b> enough. The answer can reveal the question, so we check every detail.</div></div>
-      <div class="note"><svg class="i"><use href="#check"/></svg><div>Silence is <b>not</b> approval. A "looks fine" on the whole batch is not either. Each post is approved on its own.</div></div>
-      <div class="note"><svg class="i"><use href="#edit"/></svg><div>Any edit after approval, even small, comes <b>back to you</b> before it is published.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 9 PRIVACY -->
-<section id="s9" class="slide" data-title="Privacy">
-  <div class="wrap">
-    <div class="eyebrow"><b>All phases</b> Privacy</div>
-    <h2>Private conversations <em class="b">stay private.</em></h2>
-    <p class="lead">Your clients trust you with personal things. We keep their conversations in a separate, locked-down zone that never touches the cloud.</p>
-    <div class="zones mt">
-      <div class="zone priv">
-        <div class="zh"><div class="ico"><svg class="i"><use href="#lock"/></svg></div><h3>Private zone</h3></div>
-        <p>On our own secure computers only</p>
-        <div class="items">
-          <div><svg class="i"><use href="#chat"/></svg>Client text and WhatsApp conversations</div>
-          <div><svg class="i"><use href="#layers"/></svg>Working knowledge base</div>
-          <div><svg class="i"><use href="#doc"/></svg>Drafts before privacy clearance</div>
-        </div>
-        <div class="rules"><span>Local AI only</span><span>No cloud AI</span><span>No cloud sync</span><span>Encrypted</span><span>Authorized staff only</span></div>
-      </div>
-      <div class="gatebox"><div class="ln"></div><div class="lock"><svg class="i"><use href="#shield"/></svg></div><b>Only cleared, approved content crosses</b><small>Consent or de-identified, then approved by you</small><div class="ln"></div></div>
-      <div class="zone host">
-        <div class="zh"><div class="ico"><svg class="i"><use href="#server"/></svg></div><h3>Hosted zone</h3></div>
-        <p>Only what is needed to run each service</p>
-        <div class="items">
-          <div><svg class="i"><use href="#video"/></svg>Course library (no client data, behind a login)</div>
-          <div><svg class="i"><use href="#mail"/></svg>Email list on your email platform</div>
-          <div><svg class="i"><use href="#globe"/></svg>Approved Q&amp;A posts on your website</div>
-        </div>
-        <div class="rules"><span>HTTPS</span><span>Encrypted storage</span><span>Access control</span><span>Tested backups</span></div>
-      </div>
-    </div>
-    <div class="grid g3 mt">
-      <div class="card"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><h3>NDA first</h3><p class="small">We sign a confidentiality agreement before we see any private material. We never sell or share it.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>Need to know</h3><p class="small">Only the team members who need a file for the work can open it.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>Clean exit</h3><p class="small">When we finish, we return your work, remove our access, delete our copies, and confirm it in writing.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 10 EMAIL -->
-<section id="s10" class="slide" data-title="Phase 2: Email">
+<!-- EMAIL -->
+<section class="slide" data-title="Phase 2: Email">
   <div class="wrap">
     <div class="eyebrow"><b>Phase 2</b> Wake up your email list</div>
-    <h2>A warm hello to <em class="b">400 people</em> who already know you.</h2>
-    <p class="lead">We start with your existing Kit account. We move to another tool only if you agree. We clean the list, keep every unsubscribe, and start with a small group.</p>
-    <div class="seq mt">
-      <div class="mail"><div class="no">1</div><b>Hello again</b><p>A personal reintroduction from you.</p></div>
-      <div class="mail"><div class="no">2</div><b>A teaching point</b><p>Something useful from your approved material.</p></div>
-      <div class="mail"><div class="no">3</div><b>A real answer</b><p>An approved Q&amp;A or short clip on a common worry.</p></div>
-      <div class="mail"><div class="no">4</div><b>The consultation</b><p>What a free consultation with you involves.</p></div>
-      <div class="mail last"><div class="no">5</div><b>A gentle invite</b><p>A warm, no-pressure invitation to book.</p></div>
+    <h2>400 people already know you. <em class="b">Let's say hello.</em></h2>
+    <p class="lead">This is where new clients come from first. People on your list have been in touch with you before.</p>
+    <div class="kitcheck mt">
+      <div class="kc">
+        <h3>Step 1: Health check on your Kit account</h3>
+        <ul class="ticks mt-s">
+          <li>Is your domain connected properly?</li>
+          <li>Are emails landing in inboxes, or in spam?</li>
+          <li>How was the list used before? Too many past blasts can hurt delivery.</li>
+        </ul>
+      </div>
+      <div class="kd">
+        <div class="kopt good"><svg class="i"><use href="#check"/></svg><div><b>Healthy?</b><small>We keep Kit and build on it.</small></div></div>
+        <div class="kopt alt"><svg class="i"><use href="#refresh"/></svg><div><b>Not healthy?</b><small>We move to Brevo or Mailchimp. 400 contacts fit their cheapest plan.</small></div></div>
+      </div>
     </div>
-    <div class="exits">
-      <div class="exit"><svg class="i"><use href="#pen"/></svg>You approve every email before it is sent</div>
-      <div class="exit"><svg class="i"><use href="#cal"/></svg>Someone books? They leave the sequence</div>
-      <div class="exit"><svg class="i"><use href="#mail"/></svg>Someone unsubscribes? Marketing stops</div>
+    <h3 class="mt">Step 2: The journey</h3>
+    <div class="journey mt-s">
+      <div class="jn"><svg class="i"><use href="#mail"/></svg><b>Warm emails</b><small>Approved by you</small></div>
+      <div class="jarrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="jn"><svg class="i"><use href="#globe"/></svg><b>Simple landing page</b><small>Send a question or book a call</small></div>
+      <div class="jarrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="jn hl"><svg class="i"><use href="#cal"/></svg><b>Calendar link</b><small>Booked in a few clicks</small></div>
+      <div class="jarrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="jn"><svg class="i"><use href="#chat"/></svg><b>Call with you</b><small>The goal</small></div>
     </div>
-    <h3 class="mt">How we measure it</h3>
-    <div class="metrics mt-s">
-      <div class="metric"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><b>Emails delivered</b><small>Reached the inbox</small></div>
-      <div class="metric"><div class="ico"><svg class="i"><use href="#search"/></svg></div><b>Unique clicks</b><small>Real interest</small></div>
-      <div class="metric star"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><b>Completed bookings</b><small>The main number</small></div>
-      <div class="metric"><div class="ico"><svg class="i"><use href="#layers"/></svg></div><b>Booking rate</b><small>Bookings per email delivered</small></div>
-      <div class="metric"><div class="ico"><svg class="i"><use href="#heart"/></svg></div><b>New clients</b><small>Where you can share it</small></div>
-    </div>
-    <p class="small mt-s">We match bookings against your calendar. Duplicates and cancellations are not counted. Opens are a side signal only.</p>
+    <div class="nurture"><svg class="i"><use href="#tag"/></svg><div><b>Not ready yet?</b> People who don't reply or book get a tag, and move into a gentle 12-month nurture. Nobody is lost, nobody is spammed.</div></div>
   </div>
 </section>
 
-<!-- 11 PATH TO CONSULTATION -->
-<section id="s11" class="slide" data-title="Path to booking">
+<!-- INSTAGRAM -->
+<section class="slide" data-title="Phase 2: Instagram">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 2</b> The path to a consultation</div>
-    <h2>Every step leads to <em class="b">one easy next step.</em></h2>
-    <p class="lead">We connect your approved content to a clear booking route, and test it from start to finish with your website contractor.</p>
-    <div class="funnel mt">
-      <div class="fl"><svg class="i"><use href="#globe"/></svg>People discover your real answers<small>Q&amp;A posts, clips, Instagram, emails</small></div>
-      <div class="fl"><svg class="i"><use href="#heart"/></svg>They see how you help<small>Your website and consultation page</small></div>
-      <div class="fl"><svg class="i"><use href="#cal"/></svg>They book a free consultation<small>Your scheduling tool</small></div>
-      <div class="fl"><svg class="i"><use href="#chat"/></svg>They meet you<small>Attendance tracked</small></div>
-      <div class="fl"><svg class="i"><use href="#check"/></svg>They become clients<small>The goal</small></div>
+    <div class="eyebrow"><b>Phase 2</b> Instagram automation</div>
+    <h2>Every like, comment and follow <em class="b">can start a conversation.</em></h2>
+    <p class="lead">Automations reply for you in seconds, share something useful, and gently lead people toward a call. Built with a tool like ManyChat or GoHighLevel.</p>
+    <div class="ig mt">
+      <div class="phone">
+        <div class="ph-top"><b>Comment automation</b></div>
+        <div class="ph-post"><div class="ph-img"><svg class="i"><use href="#clip"/></svg></div><div class="ph-cm"><b>@sarah.k</b> GUIDE</div></div>
+        <div class="ph-dm"><div class="bubble in">Hi Sarah! Here's the free hunger guide you asked for. Want the next step too?</div></div>
+        <small>Someone comments a keyword. They get a DM instantly.</small>
+      </div>
+      <div class="phone">
+        <div class="ph-top"><b>New follower automation</b></div>
+        <div class="ph-follow"><svg class="i"><use href="#user"/></svg><span><b>@maria.w</b> started following you</span></div>
+        <div class="ph-time">10 seconds later</div>
+        <div class="ph-dm"><div class="bubble in">Thanks so much for following! Here's a free guide to start with. I hope it helps.</div></div>
+        <small>A warm thank-you and a freebie, automatically.</small>
+      </div>
+      <div class="igflow">
+        <div class="ign"><svg class="i"><use href="#insta"/></svg>Like, comment or follow</div>
+        <div class="igd"><svg class="i"><use href="#arrow"/></svg></div>
+        <div class="ign"><svg class="i"><use href="#chat"/></svg>Instant DM with a freebie</div>
+        <div class="igd"><svg class="i"><use href="#arrow"/></svg></div>
+        <div class="ign"><svg class="i"><use href="#tag"/></svg>Tagged and nurtured</div>
+        <div class="igd"><svg class="i"><use href="#arrow"/></svg></div>
+        <div class="ign hl"><svg class="i"><use href="#cal"/></svg>Books a call</div>
+        <p class="small mt-s">Posting often? We set up a new automation for each post and manage it month to month.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 12 VIDEO -->
-<section id="s12" class="slide" data-title="Phase 3: Video">
+<!-- VIDEO -->
+<section class="slide" data-title="Phase 3: Video">
   <div class="wrap">
     <div class="eyebrow"><b>Phase 3</b> Short videos</div>
-    <h2>Short clips that <em class="b">keep your meaning.</em></h2>
-    <p class="lead">Your long videos hold dozens of strong moments. Our editors turn them into complete, clear clips: a real opening, one full idea, a natural ending.</p>
-    <div class="flow mt">
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#eye"/></svg></div><b>Watch</b><p>We watch every video in full first.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#tag"/></svg></div><b>Map</b><p>Topics, questions and strong moments, with timestamps.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#spark"/></svg></div><b>Shortlist</b><p>Local tools suggest passages. Editors choose.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#clip"/></svg></div><b>Cut</b><p>Complete clips with full context.</p></div>
-      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#pen"/></svg></div><b>Brand</b><p>Captions, fonts, colors and framing.</p></div>
-      <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#check"/></svg></div><b>You approve</b><p>Then your Instagram poster publishes.</p></div>
+    <h2>One long video. <em class="b">Many short ones.</em></h2>
+    <p class="lead">We cut your long videos into short, clear clips with captions and your branding. We do this today for a podcast client: 20 to 60 minute episodes turned into daily shorts.</p>
+    <div class="l2s mt">
+      <div class="lbar"><span class="lt">Your 45-minute video</span>
+        <i style="left:6%;width:7%"></i><i style="left:19%;width:6%"></i><i style="left:31%;width:8%"></i><i style="left:47%;width:6%"></i><i style="left:60%;width:7%"></i><i style="left:74%;width:6%"></i><i style="left:86%;width:7%"></i>
+      </div>
+      <div class="fan"><svg viewBox="0 0 1000 60" preserveAspectRatio="none" fill="none" stroke="#93B4FF" stroke-width="2"><path d="M95 0 C95 30, 70 30, 70 60M220 0 C220 30, 210 30, 210 60M350 0 C350 30, 350 30, 350 60M500 0 C500 30, 490 30, 490 60M635 0 C635 30, 630 30, 630 60M770 0 C770 30, 770 30, 770 60M895 0 C895 30, 910 30, 910 60"/></svg></div>
+      <div class="shorts">
+        <div class="sh"><svg class="i"><use href="#play"/></svg><span>Hunger</span></div>
+        <div class="sh"><svg class="i"><use href="#play"/></svg><span>Food noise</span></div>
+        <div class="sh"><svg class="i"><use href="#play"/></svg><span>Choice</span></div>
+        <div class="sh"><svg class="i"><use href="#play"/></svg><span>Emotions</span></div>
+        <div class="sh"><svg class="i"><use href="#play"/></svg><span>Boundaries</span></div>
+        <div class="sh"><svg class="i"><use href="#play"/></svg><span>Stress</span></div>
+        <div class="sh"><svg class="i"><use href="#play"/></svg><span>Nights</span></div>
+      </div>
     </div>
     <div class="grid g3 mt">
-      <div class="card"><div class="ico"><svg class="i"><use href="#layers"/></svg></div><h3>An organized clip library</h3><p class="small">Every clip carries a title, topic, subtopic, source video, timestamps, version and approval status.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#clip"/></svg></div><h3>Up to 30 clips a week</h3><p class="small">Once footage and brand guidelines are in. More is possible. The rhythm is always yours to set.</p></div>
-      <div class="card"><div class="ico"><svg class="i"><use href="#video"/></svg></div><h3>One small ask</h3><p class="small">Keep your original video files after posting. Instagram copies are compressed and lose quality.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>A full editing team</h3><p class="small">In-house editors plus trusted contract editors. Around 30 videos a week is easy, and more is possible.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><h3>Our advice: one a day</h3><p class="small">About 30 a month. The more you post, the more views, and the more people find their way to you.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><h3>Professional tools</h3><p class="small">Adobe Premiere Pro, After Effects and DaVinci Resolve. You approve every clip before it goes out.</p></div>
     </div>
-    <p class="small mt-s">Editing tools: Adobe Premiere Pro, Adobe After Effects, DaVinci Resolve.</p>
   </div>
 </section>
 
-<!-- 13 TEAM -->
-<section id="s13" class="slide" data-title="Your team">
+<!-- FULL GROWTH -->
+<section class="slide" data-title="Later: Full growth">
   <div class="wrap">
-    <div class="eyebrow"><b>All phases</b> Working together</div>
-    <h2>We work with the people <em class="b">you already trust.</em></h2>
-    <p class="lead">We add to your team. We do not replace anyone or step into their role.</p>
-    <div class="team mt">
-      <div class="sat us t0"><div class="top"><div class="ico"><svg class="i"><use href="#spark"/></svg></div><b>Accredited AI</b></div><p>Plans, builds and coordinates. Brings every draft to you for approval.</p></div>
-      <div class="sat t1"><div class="top"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><b>Website contractor</b></div><p>Makes site and course platform changes. We coordinate with them.</p></div>
-      <div class="sat t2"><div class="top"><div class="ico"><svg class="i"><use href="#insta"/></svg></div><b>Instagram poster</b></div><p>Keeps posting day to day. We hand over approved clips.</p></div>
-      <div class="you"><div><b>You</b><small>The final word on<br>your teaching and voice</small></div></div>
-      <div class="sat t5"><div class="top"><div class="ico"><svg class="i"><use href="#mic"/></svg></div><b>PR and media contact</b></div><p>Keeps podcasts and press. We stay out of this lane.</p></div>
-      <div class="sat keep t6"><div class="top"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><b>Your paper cards</b></div><p>Your hand-to-paper practice stays exactly as it is.</p></div>
+    <div class="eyebrow"><b>Later, if you want</b> Full growth</div>
+    <h2>When you're ready, <em class="b">everything in one place.</em></h2>
+    <p class="lead">No need to hire a second agency later. When the first phases are working, we can take on the rest.</p>
+    <div class="grid g3 mt">
+      <div class="card"><div class="ico"><svg class="i"><use href="#clip"/></svg></div><h3>30 pieces of content a month</h3><p class="small">Ideas, scripts and editing, all done for you.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>Website, SEO and AI search</h3><p class="small">A website built for you, found on Google and in AI answers.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#ad"/></svg></div><h3>Meta, Google and TikTok ads</h3><p class="small">Launched, watched daily and improved by a performance marketer.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#phone"/></svg></div><h3>Voice AI calling agent</h3><p class="small">Answers and makes calls using the same knowledge base as your chatbot. Built on Vapi.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><h3>Email, SMS and WhatsApp</h3><p class="small">Campaigns and automations across every channel.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#spark"/></svg></div><h3>Business advice</h3><p class="small">Which platform next, and how to grow. Meta first, then Google, TikTok or LinkedIn as budget allows.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 14 COSTS -->
-<section id="s14" class="slide" data-title="Running costs">
+<!-- ADS -->
+<section class="slide" data-title="How ads are managed">
+  <div class="wrap">
+    <div class="eyebrow"><b>Later, if you want</b> How we run ads</div>
+    <h2>Ads are watched <em class="b">every single day.</em></h2>
+    <p class="lead">Ads are never "set and forget". A performance marketer checks every account daily and acts fast, so no money is wasted.</p>
+    <div class="flow mt">
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#ad"/></svg></div><b>Launch</b><p>Test videos go live as ads.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#eye"/></svg></div><b>Check daily</b><p>Cost per lead, cost per view, page conversions.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#stop"/></svg></div><b>Stop waste</b><p>Cost per lead too high? Paused right away.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#clip"/></svg></div><b>New videos</b><p>Fresh ones go in to replace them.</p></div>
+      <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#check"/></svg></div><b>Keep winners</b><p>Tested for two days. Good leads? It keeps running.</p></div>
+    </div>
+    <div class="loop" style="width:84%"><span>Repeat, every day</span></div>
+    <div class="grid g3 mt">
+      <div class="card"><div class="ico"><svg class="i"><use href="#eye"/></svg></div><h3>You can see everything</h3><p class="small">We add you to your own ad account, so you can check leads, cost and spend any day.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#doc"/></svg></div><h3>Weekly reports</h3><p class="small">Plain-English reports every week, plus a WhatsApp group for quick answers.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#coin"/></svg></div><h3>Budget sets the pace</h3><p class="small">For example, $2,000 a month on Meta tests 3 to 4 videos at a time. A bigger budget tests more.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COSTS -->
+<section class="slide" data-title="Running costs">
   <div class="wrap">
     <div class="eyebrow"><b>Good to know</b> Tools and running costs</div>
-    <h2>Tools you own, <em class="b">paid directly.</em></h2>
-    <p class="lead">These are third-party costs. The accounts are yours. We confirm each provider and budget with you before anything is bought.</p>
+    <h2>Your accounts, <em class="b">paid directly by you.</em></h2>
+    <p class="lead">Every tool is paid from your own account. So everything keeps running, and stays yours, no matter what.</p>
     <div class="card costs mt">
-      <div class="cost"><div class="ico"><svg class="i"><use href="#server"/></svg></div><div><b>Secure hosting and file storage</b><p>A small private server for the library, plus private storage for your files. Planned on Hetzner Cloud and Cloudflare R2. Based on a few users, 100 to 500 GB of files and modest traffic. Confirmed after we check your file sizes.</p></div><div class="amt">$25 to $50<small>per month, estimate</small></div></div>
-      <div class="cost"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><div><b>Email platform</b><p>Your existing Kit account first. Brevo or Mailchimp only if we agree a move is better.</p></div><div class="amt txt">Provider's plan price</div></div>
-      <div class="cost"><div class="ico"><svg class="i"><use href="#insta"/></svg></div><div><b>Instagram and automation tools</b><p>Chosen during setup, on accounts you own.</p></div><div class="amt txt">Confirmed at setup</div></div>
-      <div class="cost"><div class="ico"><svg class="i"><use href="#ad"/></svg></div><div><b>Advertising budget</b><span class="tag" style="margin-left:8px">Optional</span><p>Only if you choose paid ads. Paid straight to Meta, Google or TikTok.</p></div><div class="amt txt">You set the budget</div></div>
-      <div class="cost"><div class="ico"><svg class="i"><use href="#phone"/></svg></div><div><b>Voice AI calling</b><span class="tag" style="margin-left:8px">Optional</span><p>Pay per minute of calls, about $150 to $200 per 1,000 minutes. Phone numbers, add-ons and taxes extra.</p></div><div class="amt">$0.15 to $0.20<small>per call minute</small></div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#server"/></svg></div><div><b>Library hosting</b><span class="tag" style="margin-left:8px">Phase 1</span><p>Cloudflare file storage plus a private server (VPS, e.g. Hostinger). The same setup also runs your chatbot.</p></div><div class="amt">$25 to $50<small>per month, estimate</small></div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#bot"/></svg></div><div><b>Chatbot AI usage</b><span class="tag" style="margin-left:8px">Phase 1</span><p>Saved answers cost nothing per question. Only new questions use a low-cost or free AI model.</p></div><div class="amt txt">Kept very low</div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><div><b>Email platform</b><span class="tag" style="margin-left:8px">Phase 2</span><p>Your existing Kit account if it is healthy. Otherwise Brevo or Mailchimp. About 400 contacts fits the cheapest plan.</p></div><div class="amt txt">Entry-level plan</div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#insta"/></svg></div><div><b>Instagram automation tool</b><span class="tag" style="margin-left:8px">Phase 2</span><p>ManyChat or GoHighLevel, on an account you own.</p></div><div class="amt txt">Tool's plan price</div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#ad"/></svg></div><div><b>Ad spend</b><span class="tag" style="margin-left:8px">Optional</span><p>Only if you run ads. Paid straight to Meta, Google or TikTok. You set the budget.</p></div><div class="amt txt">You decide</div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#phone"/></svg></div><div><b>Voice AI calls</b><span class="tag" style="margin-left:8px">Optional</span><p>Billed per minute of calls to your card on Vapi. About $150 to $200 per 1,000 minutes.</p></div><div class="amt">$0.15 to $0.20<small>per call minute</small></div></div>
     </div>
-    <p class="small mt-s">Hosting is a planning estimate, not a fixed all-inclusive price. Voice AI runs on cloud providers, so it sits outside the private, local-only zone.</p>
+    <p class="small mt-s">Estimates. We confirm every tool and budget with you before anything is bought.</p>
   </div>
 </section>
 
-<!-- 15 PROMISES -->
-<section id="s15" class="slide" data-title="Our promises">
+<!-- NEXT -->
+<section class="slide" data-title="Next steps">
   <div class="wrap">
-    <div class="eyebrow"><b>Always</b> Our promises</div>
-    <h2>The lines we <em class="b">never cross.</em></h2>
-    <div class="grid g2 mt">
-      <div class="card promise"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><div><b>Nothing publishes in your voice without you</b><p>Every post, email and clip is approved by you first. No exceptions.</p></div></div>
-      <div class="card promise"><div class="ico"><svg class="i"><use href="#heart"/></svg></div><div><b>It is always really you</b><p>Your real material, organized with AI help. Nothing invented, nothing that reads as "not really you".</p></div></div>
-      <div class="card promise"><div class="ico"><svg class="i"><use href="#lock"/></svg></div><div><b>The course library holds no client data</b><p>It stays private, for you and your current clients only.</p></div></div>
-      <div class="card promise"><div class="ico"><svg class="i"><use href="#shield"/></svg></div><div><b>Every public answer is protected</b><p>Consent from the client, or changed enough that nobody can be identified.</p></div></div>
-      <div class="card promise"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><div><b>Your analog practice stays analog</b><p>We will not digitize your paper recording cards.</p></div></div>
-      <div class="card promise"><div class="ico"><svg class="i"><use href="#users"/></svg></div><div><b>We respect your team</b><p>We coordinate with your contractor and poster, and stay out of your PR contact's lane.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 16 NEXT -->
-<section id="s16" class="slide" data-title="Next steps">
-  <div class="wrap">
-    <div class="eyebrow"><b>Next</b> Our first working session</div>
+    <div class="eyebrow"><b>Next</b> A few quick choices</div>
     <div class="care">
       <div>
-        <h2>Let's start with <em class="b">one small, useful thing.</em></h2>
+        <h2>Help us <em class="b">shape it to you.</em></h2>
         <div class="next mt">
-          <div class="nx"><div><b>Sign the confidentiality agreement</b><p>Before we see any private material.</p></div></div>
-          <div class="nx"><div><b>Pick a sample of course material</b><p>A handful of videos and handouts for the pilot library.</p></div></div>
-          <div class="nx"><div><b>Choose the first Q&amp;A conversations</b><p>Which channels, and how they can be exported.</p></div></div>
-          <div class="nx"><div><b>Draw the public and private line</b><p>What the website assistant may use, and what stays inside.</p></div></div>
-          <div class="nx"><div><b>Set review days that suit you</b><p>Then we agree a practical schedule together.</p></div></div>
+          <div class="nx"><div><b>Library: just for you, or for your clients too?</b><p>If clients, which levels should see what.</p></div></div>
+          <div class="nx"><div><b>Chatbot: what should the website version cover?</b><p>The course version uses everything you approve.</p></div></div>
+          <div class="nx"><div><b>Conversations: a first few screen recordings</b><p>A handful of chats is enough to start.</p></div></div>
+          <div class="nx"><div><b>Email: access to Kit for the health check</b><p>So we know whether to keep it or move.</p></div></div>
+          <div class="nx"><div><b>Videos: how many a month feels right?</b><p>We suggest one a day, when you're ready.</p></div></div>
         </div>
       </div>
       <div class="closer">
-        <div class="eyebrow" style="color:#BFD3FF">The only question for today</div>
-        <h2>What would you like to make useful first?</h2>
-        <p>Your library, your public answers, or your email list. We will start there, show you the result, and grow only when you are happy.</p>
+        <div class="eyebrow" style="color:#BFD3FF">Where we begin</div>
+        <h2>Phase 1: your library and your chatbot.</h2>
+        <p>We start small, show you the result, and move to your email list and Instagram only when you're happy.</p>
       </div>
     </div>
   </div>
