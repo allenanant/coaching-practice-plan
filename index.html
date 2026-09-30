@@ -99,6 +99,29 @@ svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stro
 .goal b{display:block;font-size:17px}
 .goal small{display:block;margin-top:4px}
 
+
+/* lanes */
+.lanes{display:grid;gap:16px}
+.lane{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px 22px 20px;box-shadow:var(--shadow)}
+.lane.pub{background:var(--sky);border-style:dashed;border-color:var(--sky3);box-shadow:none}
+.lane-h{display:flex;align-items:baseline;gap:12px;margin-bottom:12px}
+.lane-h b{font-family:Fraunces,serif;font-weight:500;font-size:20px}
+.lane-h small{font-size:14px}
+.lrow{display:grid;grid-template-columns:1.05fr 46px 1fr 46px 1fr 46px .8fr;align-items:center}
+.lrow .col{display:grid;gap:8px}
+.lrow .chip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:9px 12px;font-size:14.5px;font-weight:500;box-shadow:var(--shadow)}
+.lrow .chip svg{color:var(--blue)}
+.hub.sm{padding:16px 16px;border-radius:18px}
+.hub.sm h3{font-size:19px}
+.hub.sm .hubico{width:40px;height:40px;border-radius:12px;margin-bottom:8px}
+.hub.sm .hubico svg{width:22px;height:22px}
+.goal.wide{grid-column:5 / 8;text-align:left;display:flex;align-items:center;gap:14px;padding:16px 20px;border-color:var(--sky3);border-width:1.5px}
+.goal.wide .ico{margin:0;flex:none}
+.goal.wide small{margin-top:2px}
+.lrow .goal{padding:16px 12px}
+.lrow .goal .ico{width:40px;height:40px;margin:0 auto 8px}
+@media (max-width:1100px){.lrow{grid-template-columns:1fr;gap:10px}.lrow .arrow{transform:rotate(90deg);height:36px}.goal.wide{grid-column:auto}}
+
 /* roadmap */
 .road{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr 34px 1fr;align-items:stretch}
 .phase{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 22px;box-shadow:var(--shadow);position:relative;display:flex;flex-direction:column}
@@ -388,33 +411,43 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 <section id="s3" class="slide" data-title="The big picture">
   <div class="wrap">
     <div class="eyebrow"><b>02</b> The big picture</div>
-    <h2>One source of truth, <em class="b">many ways to help.</em></h2>
-    <p class="lead">Everything flows from your own material. We organize it once, and it powers your search, your public answers, your videos and your emails.</p>
-    <div class="bp mt">
-      <div class="col">
-        <div class="colh">Your material</div>
-        <div class="chip"><svg class="i"><use href="#video"/></svg>Course videos</div>
-        <div class="chip"><svg class="i"><use href="#doc"/></svg>Handouts and PDFs</div>
-        <div class="chip"><svg class="i"><use href="#chat"/></svg>Client conversations</div>
-        <div class="chip"><svg class="i"><use href="#mail"/></svg>Your email list</div>
+    <h2>Two sides, <em class="b">one source of truth.</em></h2>
+    <p class="lead">The private side helps you and your current clients right away. The public side comes next, and brings new people to a free consultation.</p>
+    <div class="lanes mt">
+      <div class="lane">
+        <div class="lane-h"><span class="tag">Phase 1</span><b>Private</b><small>For you and your current clients</small></div>
+        <div class="lrow">
+          <div class="col">
+            <div class="chip"><svg class="i"><use href="#video"/></svg>Course videos</div>
+            <div class="chip"><svg class="i"><use href="#doc"/></svg>Handouts and PDFs</div>
+          </div>
+          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+          <div class="hub sm"><div class="hubico"><svg class="i"><use href="#lock"/></svg></div><h3>Private teaching library</h3><p>Behind a login. Searchable by topic and meaning.</p></div>
+          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+          <div class="goal wide"><div class="ico"><svg class="i"><use href="#search"/></svg></div><div><b>Any lesson found in seconds</b><small>By you and your clients, straight to the exact video moment or PDF page</small></div></div>
+        </div>
       </div>
-      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
-      <div class="hub">
-        <div class="hubico"><svg class="i"><use href="#layers"/></svg></div>
-        <h3>Your private library and approved answers</h3>
-        <p>Organized by your teaching topics. Checked by hand. Approved by you.</p>
+      <div class="lane pub">
+        <div class="lane-h"><span class="tag">Phase 2 onward</span><b>Public</b><small>For new people who need your help</small></div>
+        <div class="lrow">
+          <div class="col">
+            <div class="chip"><svg class="i"><use href="#chat"/></svg>Client conversations, privacy-cleared</div>
+            <div class="chip"><svg class="i"><use href="#video"/></svg>Your videos</div>
+            <div class="chip"><svg class="i"><use href="#mail"/></svg>Your email list</div>
+          </div>
+          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+          <div class="hub sm"><div class="hubico"><svg class="i"><use href="#check"/></svg></div><h3>Approved public answers</h3><p>Only what you have cleared for the public.</p></div>
+          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+          <div class="col">
+            <div class="chip"><svg class="i"><use href="#globe"/></svg>Public Q&amp;A posts</div>
+            <div class="chip"><svg class="i"><use href="#bot"/></svg>Website chatbot</div>
+            <div class="chip"><svg class="i"><use href="#clip"/></svg>Short video clips</div>
+            <div class="chip"><svg class="i"><use href="#mail"/></svg>Warm email sequence</div>
+          </div>
+          <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+          <div class="goal"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><b>Free consultation bookings</b><small>The number that matters</small></div>
+        </div>
       </div>
-      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
-      <div class="col">
-        <div class="colh">What it powers</div>
-        <div class="chip"><svg class="i"><use href="#search"/></svg>Search for you and your coaches</div>
-        <div class="chip"><svg class="i"><use href="#bot"/></svg>Answer assistant</div>
-        <div class="chip"><svg class="i"><use href="#globe"/></svg>Public Q&amp;A posts</div>
-        <div class="chip"><svg class="i"><use href="#clip"/></svg>Short video clips</div>
-        <div class="chip"><svg class="i"><use href="#mail"/></svg>A warm email sequence</div>
-      </div>
-      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
-      <div class="goal"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><b>Free consultation bookings</b><small>The one number that matters</small></div>
     </div>
   </div>
 </section>
@@ -428,21 +461,23 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
     <div class="road mt">
       <div class="phase p1">
         <div class="num">PHASE 1</div><h3>Foundation</h3>
-        <div class="why">Make your teaching findable. Prove the approach at low risk.</div>
+        <div class="why">Private. Make your teaching easy to find for you and your clients.</div>
         <ul>
           <li>Private, searchable teaching library</li>
-          <li>Answer assistant built only on your approved answers</li>
-          <li>A first small batch of public Q&amp;A posts</li>
+          <li>Login access for you and your current clients</li>
+          <li>Folders by your teaching topics</li>
           <li>Privacy and approval process set up</li>
+          <li>A first small batch of Q&amp;A drafts for your review</li>
         </ul>
         <div class="foot"><span class="tag">Starts small</span></div>
       </div>
       <div class="gate"><div class="dia"></div><span>Your approval</span></div>
       <div class="phase p2">
         <div class="num">PHASE 2</div><h3>Reach</h3>
-        <div class="why">Bring your real answers to the people who need them.</div>
+        <div class="why">Public. Bring your real answers to new people who need them.</div>
         <ul>
-          <li>Full public Q&amp;A library, by topic</li>
+          <li>Public Q&amp;A library, by topic</li>
+          <li>Website chatbot that only uses your approved answers</li>
           <li>Reactivate your email list with a 4 to 5 email sequence</li>
           <li>Email and Instagram automation</li>
           <li>A clear path to book a free consultation</li>
@@ -514,7 +549,7 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
           <li><span><b>Lands on the exact moment.</b> Video timestamps and PDF page numbers.</span></li>
           <li><span><b>Folders by your teaching topics.</b> One file can sit in many folders without copies.</span></li>
           <li><span><b>Open everything in place.</b> Play video and audio, read PDFs and documents, view images, download originals.</span></li>
-          <li><span><b>For you first,</b> and later for the coaches you train, with the access you choose.</span></li>
+          <li><span><b>For you and your current clients.</b> Private, behind a login. You choose who gets access.</span></li>
         </ul>
         <div class="mt-s"><a class="btn" href="https://allenanant.github.io/accredited-library-demo/" target="_blank" rel="noopener"><svg class="i"><use href="#eye"/></svg>See the sample library</a></div>
       </div>
@@ -544,9 +579,9 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 </section>
 
 <!-- 7 ASSISTANT -->
-<section id="s7" class="slide" data-title="Answer assistant">
+<section id="s7" class="slide" data-title="Phase 2: Chatbot">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> The answer assistant</div>
+    <div class="eyebrow"><b>Phase 2</b> The website chatbot</div>
     <h2>It answers with <em class="b">your words,</em> or not at all.</h2>
     <p class="lead">The assistant only gives answers you have approved. It never searches the internet and never makes things up.</p>
     <div class="asst mt">
@@ -561,7 +596,7 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
       </div>
       <div class="fork"><svg viewBox="0 0 64 180" fill="none" stroke="#93B4FF" stroke-width="2.2" stroke-linecap="round"><path d="M2 90h22c14 0 14-55 30-55h6M24 90c14 0 14 55 30 55h6"/><path d="M54 29l7 6-7 6M54 139l7 6-7 6"/></svg></div>
       <div class="split">
-        <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>Inside: you and your coaches</h3></div><p>Searches your full course library and approved answers. Behind a login.</p></div>
+        <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>Inside: you and your clients</h3></div><p>Can also answer from your private course library. Behind a login.</p></div>
         <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>Outside: your website visitors</h3></div><p>Uses only a smaller set of answers you have cleared for the public. Points people to a free consultation.</p></div>
       </div>
     </div>
@@ -585,7 +620,7 @@ footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-c
 <!-- 8 APPROVAL -->
 <section id="s8" class="slide" data-title="Your approval">
   <div class="wrap">
-    <div class="eyebrow"><b>Phase 1</b> Public Q&amp;A posts</div>
+    <div class="eyebrow"><b>Before anything goes public</b> Q&amp;A posts</div>
     <h2>Every post passes <em class="b">two gates:</em> privacy, then you.</h2>
     <p class="lead">We turn your real answers into website posts. Nothing goes out unless it is privacy-cleared and you have approved that exact version.</p>
     <div class="appr mt">
