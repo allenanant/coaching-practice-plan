@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="author" content="Accredited AI">
+<title>Your Coaching Practice Plan | Accredited AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A1A3A; --ink2:#22345E; --muted:#5B6B8C; --soft:#8A98B5;
+  --blue:#1D4ED8; --blue-d:#12329A; --blue-l:#3B82F6; --blue-xl:#93B4FF;
+  --sky:#F4F7FF; --sky2:#E6EEFF; --sky3:#D3E1FF; --line:#E3E9F5;
+  --ok:#0E8F63; --ok-bg:#E8F7F0; --amber:#B45309; --amber-bg:#FFF4E5; --red:#B42318; --red-bg:#FDECEA;
+  --r:18px; --shadow:0 1px 2px rgba(10,26,58,.04),0 8px 28px rgba(18,50,154,.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-snap-type:y proximity}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;letter-spacing:-.015em;line-height:1.12}
+h1{font-size:clamp(34px,5vw,56px)}
+h2{font-size:clamp(28px,3.4vw,42px);margin-bottom:14px}
+h3{font-size:21px;margin-bottom:6px}
+em.b{font-style:italic;color:var(--blue)}
+p{color:var(--ink2)}
+.lead{font-size:19px;color:var(--muted);max-width:760px}
+small,.small{font-size:14px;color:var(--muted)}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* chrome */
+.topbar{position:fixed;inset:0 0 auto 0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 32px;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:50}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em;font-size:17px}
+.mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--blue-d));display:grid;place-items:center;color:#fff;font-family:Fraunces,serif;font-weight:600;font-size:16px}
+.topbar .doc{font-size:14px;color:var(--muted)}
+.dots{position:fixed;right:22px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:10px;z-index:50}
+.dots a{width:9px;height:9px;border-radius:50%;background:var(--sky3);display:block;position:relative;transition:.2s}
+.dots a.on{background:var(--blue);transform:scale(1.35)}
+.dots a span{position:absolute;right:20px;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:12px;background:var(--ink);color:#fff;padding:4px 9px;border-radius:6px;opacity:0;pointer-events:none;transition:.15s}
+.dots a:hover span{opacity:1}
+.pager{position:fixed;right:22px;bottom:20px;display:flex;align-items:center;gap:8px;z-index:50;font-size:13px;color:var(--muted)}
+.pager button{width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer;display:grid;place-items:center}
+.pager button:hover{border-color:var(--blue);color:var(--blue)}
+
+/* slides */
+.slide{min-height:100vh;padding:104px 88px 72px 56px;display:flex;align-items:center;scroll-snap-align:start;border-bottom:1px solid var(--line)}
+.slide:nth-of-type(even){background:linear-gradient(180deg,#fff, var(--sky) 100%)}
+.wrap{width:100%;max-width:1160px;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
+.eyebrow b{font-weight:600;background:var(--sky2);color:var(--blue-d);border-radius:999px;padding:3px 10px;letter-spacing:.04em}
+.mt{margin-top:36px}.mt-s{margin-top:20px}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--sky2);color:var(--blue);display:grid;place-items:center;margin-bottom:14px}
+.ticks{list-style:none;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;color:var(--ink2)}
+.ticks li::before{content:"";flex:none;width:20px;height:20px;margin-top:3px;border-radius:50%;background:var(--sky2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.5l2.6 2.5L14 7.5' stroke='%231D4ED8' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.note{display:flex;gap:12px;align-items:flex-start;background:var(--sky);border:1px solid var(--sky3);border-radius:14px;padding:14px 18px;font-size:15px;color:var(--ink2)}
+.note svg{color:var(--blue);margin-top:1px}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--sky2);color:var(--blue-d)}
+
+/* cover */
+.cover{background:radial-gradient(1200px 600px at 85% 10%,var(--sky2),transparent 60%),radial-gradient(800px 500px at 0% 100%,var(--sky),transparent 60%),#fff !important}
+.cover h1{max-width:900px}
+.cover .lead{margin-top:22px;font-size:21px}
+.cover-meta{margin-top:44px;display:flex;gap:28px;flex-wrap:wrap;font-size:15px;color:var(--muted)}
+.cover-meta div{display:flex;gap:8px;align-items:center}
+.cover-meta svg{color:var(--blue)}
+.pillars{margin-top:56px;display:flex;gap:12px;flex-wrap:wrap}
+.pill{display:flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);font-weight:600;font-size:15px}
+.pill svg{color:var(--blue)}
+.pill i{font-style:normal;color:var(--soft);font-weight:500}
+
+/* stats */
+.stat{padding:28px}
+.stat .n{font-family:Fraunces,serif;font-size:52px;line-height:1;color:var(--blue);font-weight:500}
+.stat .l{margin-top:10px;font-weight:600}
+.stat .d{margin-top:4px;font-size:14px;color:var(--muted)}
+
+/* big picture */
+.bp{display:grid;grid-template-columns:1fr 60px 1.1fr 60px 1fr 60px .8fr;align-items:center}
+.bp .col{display:grid;gap:10px}
+.bp .chip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;font-weight:500;box-shadow:var(--shadow)}
+.bp .chip svg{color:var(--blue)}
+.bp .colh{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--soft);margin-bottom:4px}
+.hub{background:linear-gradient(160deg,var(--blue),var(--blue-d));color:#fff;border-radius:22px;padding:26px 22px;text-align:center;box-shadow:0 18px 40px rgba(29,78,216,.28)}
+.hub h3{color:#fff;font-size:22px}
+.hub p{color:#D6E2FF;font-size:14px;margin-top:6px}
+.hub .hubico{width:54px;height:54px;border-radius:16px;background:rgba(255,255,255,.14);display:grid;place-items:center;margin:0 auto 14px}
+.hub .hubico svg{width:28px;height:28px;color:#fff}
+.arrow{display:grid;place-items:center;color:var(--blue-xl)}
+.arrow svg{width:40px;height:24px}
+.goal{background:#fff;border:2px solid var(--blue);border-radius:20px;padding:22px 16px;text-align:center}
+.goal .ico{margin:0 auto 10px}
+.goal b{display:block;font-size:17px}
+.goal small{display:block;margin-top:4px}
+
+/* roadmap */
+.road{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr 34px 1fr;align-items:stretch}
+.phase{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 22px;box-shadow:var(--shadow);position:relative;display:flex;flex-direction:column}
+.phase .num{font-family:Fraunces,serif;font-size:15px;color:var(--blue);font-weight:600;letter-spacing:.02em}
+.phase h3{margin-top:6px}
+.phase .why{font-size:14px;color:var(--muted);margin-bottom:14px}
+.phase ul{list-style:none;display:grid;gap:8px;font-size:15px;color:var(--ink2)}
+.phase ul li{padding-left:16px;position:relative}
+.phase ul li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--blue-l)}
+.phase.p1{border-top:4px solid var(--blue)}
+.phase.p2{border-top:4px solid var(--blue-l)}
+.phase.p3{border-top:4px solid var(--blue-xl)}
+.phase.opt{border:1.5px dashed var(--sky3);background:var(--sky);box-shadow:none}
+.phase .foot{margin-top:auto;padding-top:16px}
+.gate{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.gate .dia{width:22px;height:22px;transform:rotate(45deg);background:var(--blue);border-radius:5px;box-shadow:0 0 0 5px var(--sky2)}
+.gate span{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-d);margin-top:10px}
+
+/* library mock */
+.lib{display:grid;grid-template-columns:1.25fr 1fr;gap:36px;align-items:center}
+.mock{border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 30px 60px rgba(18,50,154,.12);overflow:hidden}
+.mock-bar{height:40px;background:var(--sky);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:0 14px}
+.mock-bar .d{display:flex;gap:6px}.mock-bar .d i{width:10px;height:10px;border-radius:50%;background:var(--sky3);display:block}
+.mock-bar .url{flex:1;background:#fff;border:1px solid var(--line);border-radius:8px;height:24px;display:flex;align-items:center;gap:6px;padding:0 10px;font-size:12px;color:var(--muted)}
+.mock-bar .url svg{width:12px;height:12px;color:var(--ok)}
+.mock-body{display:grid;grid-template-columns:190px 1fr;min-height:360px}
+.mock-side{border-right:1px solid var(--line);padding:16px 12px;font-size:13.5px;background:#FBFCFF}
+.mock-side .h{font-size:11px;font-weight:700;letter-spacing:.09em;color:var(--soft);text-transform:uppercase;margin:0 8px 8px}
+.mock-side .f{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:8px;color:var(--ink2)}
+.mock-side .f svg{width:16px;height:16px;color:var(--blue-l)}
+.mock-side .f.on{background:var(--sky2);color:var(--blue-d);font-weight:600}
+.mock-side .f em{margin-left:auto;font-style:normal;font-size:11px;color:var(--soft)}
+.mock-main{padding:22px}
+.mock-search{display:flex;align-items:center;gap:10px;border:1.5px solid var(--blue);border-radius:12px;padding:11px 14px;font-size:14px;box-shadow:0 0 0 4px var(--sky2)}
+.mock-search svg{width:18px;height:18px;color:var(--blue)}
+.res{display:flex;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;margin-top:12px;align-items:flex-start}
+.res .th{width:54px;height:40px;border-radius:8px;background:linear-gradient(135deg,var(--sky3),var(--sky2));display:grid;place-items:center;color:var(--blue);flex:none}
+.res .th svg{width:18px;height:18px}
+.res b{font-size:14px;display:block}
+.res .meta{font-size:12px;color:var(--muted);margin-top:2px}
+.res .meta span{background:var(--sky2);color:var(--blue-d);border-radius:5px;padding:1px 6px;font-weight:600;margin-left:4px}
+.res .ex{font-size:12.5px;color:var(--ink2);margin-top:5px;font-style:italic}
+.res .open{margin-left:auto;font-size:12px;font-weight:600;color:var(--blue);border:1px solid var(--sky3);border-radius:8px;padding:4px 10px;flex:none}
+.mock-cap{font-size:12px;color:var(--soft);text-align:center;padding:8px;border-top:1px solid var(--line);background:#FBFCFF}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;font-size:15px;padding:12px 18px;border-radius:12px;box-shadow:0 10px 24px rgba(29,78,216,.25)}
+.btn:hover{background:var(--blue-d)}
+.btn svg{width:18px;height:18px}
+
+/* flows */
+.flow{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:0;align-items:stretch;counter-reset:st}
+.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 16px;margin-right:26px;box-shadow:var(--shadow)}
+.step:last-child{margin-right:0}
+.step::after{content:"";position:absolute;right:-22px;top:50%;width:18px;height:18px;transform:translateY(-50%);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12h13M13 6l6 6-6 6' stroke='%2393B4FF' stroke-width='2.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+.step:last-child::after{display:none}
+.step .k{counter-increment:st;font-size:12px;font-weight:700;color:var(--blue);letter-spacing:.06em}
+.step .k::before{content:"STEP " counter(st)}
+.step .ico{margin:10px 0 12px}
+.step b{display:block;font-size:16px;margin-bottom:4px}
+.step p{font-size:14px;color:var(--muted);line-height:1.45}
+.step.hl{background:linear-gradient(160deg,var(--blue),var(--blue-d));border-color:transparent}
+.step.hl b,.step.hl .k{color:#fff}.step.hl p{color:#D6E2FF}.step.hl .ico{background:rgba(255,255,255,.15);color:#fff}
+
+/* assistant diagram */
+.asst{display:grid;grid-template-columns:1fr 70px 1.1fr;align-items:center;gap:0}
+.kb{background:linear-gradient(160deg,var(--blue),var(--blue-d));color:#fff;border-radius:22px;padding:28px;box-shadow:0 18px 40px rgba(29,78,216,.25)}
+.kb h3{color:#fff}.kb p{color:#D6E2FF;font-size:15px}
+.kb .rows{margin-top:16px;display:grid;gap:8px}
+.kb .rows div{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:9px 12px;font-size:14px;display:flex;gap:8px;align-items:center}
+.kb .rows svg{width:16px;height:16px}
+.split{display:grid;gap:16px}
+.aud{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;box-shadow:var(--shadow)}
+.aud .top{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.aud .top .ico{margin:0}
+.aud h3{margin:0;font-size:19px}
+.aud p{font-size:14.5px;color:var(--muted)}
+.fork{display:grid;place-items:center;color:var(--blue-xl)}
+.fork svg{width:64px;height:180px}
+.chat{margin-top:22px;display:grid;gap:10px;max-width:560px}
+.bub{padding:11px 15px;border-radius:14px;font-size:14.5px;max-width:88%}
+.bub.u{background:var(--sky2);color:var(--ink);justify-self:end;border-bottom-right-radius:4px}
+.bub.b{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px}
+.bub.b b{color:var(--blue-d)}
+
+/* approval */
+.appr{display:grid;grid-template-columns:repeat(5,1fr);gap:26px;position:relative}
+.appr .step{margin:0}
+.appr .step::after{right:-23px}
+.choices{display:grid;gap:6px;margin-top:10px}
+.choices span{font-size:12.5px;font-weight:600;border-radius:8px;padding:5px 9px;display:flex;align-items:center;gap:6px}
+.c-ok{background:var(--ok-bg);color:var(--ok)}.c-ch{background:var(--amber-bg);color:var(--amber)}.c-no{background:var(--red-bg);color:var(--red)}
+.loop{margin:18px auto 0;width:78%;border:2px dashed var(--sky3);border-top:none;border-radius:0 0 22px 22px;height:34px;position:relative}
+.loop span{position:absolute;left:50%;bottom:-14px;transform:translateX(-50%);background:#fff;padding:2px 14px;font-size:13px;font-weight:600;color:var(--amber);border:1px solid var(--line);border-radius:999px;white-space:nowrap}
+
+/* privacy */
+.zones{display:grid;grid-template-columns:1fr 150px 1fr;align-items:stretch}
+.zone{border-radius:22px;padding:26px}
+.zone.priv{background:var(--ink);color:#fff}
+.zone.priv h3{color:#fff}.zone.priv p{color:#B8C6E6}
+.zone.host{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.zone .zh{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.zone.priv .ico{background:rgba(255,255,255,.1);color:#fff;margin:0}
+.zone.host .ico{margin:0}
+.zone .items{display:grid;gap:8px;margin:16px 0}
+.zone .items div{border-radius:10px;padding:10px 12px;font-size:14.5px;display:flex;gap:10px;align-items:center}
+.zone.priv .items div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.zone.host .items div{background:var(--sky);border:1px solid var(--line)}
+.zone .items svg{width:17px;height:17px}
+.zone .rules{display:flex;flex-wrap:wrap;gap:6px}
+.zone .rules span{font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.zone.priv .rules span{background:rgba(147,180,255,.16);color:#CFE0FF}
+.zone.host .rules span{background:var(--sky2);color:var(--blue-d)}
+.gatebox{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 10px}
+.gatebox .lock{width:58px;height:58px;border-radius:50%;background:#fff;border:2px solid var(--blue);display:grid;place-items:center;color:var(--blue);box-shadow:0 0 0 7px var(--sky2)}
+.gatebox .lock svg{width:26px;height:26px}
+.gatebox b{margin-top:14px;font-size:13.5px;color:var(--blue-d)}
+.gatebox small{font-size:12px;margin-top:4px}
+.gatebox .ln{width:2px;flex:1;min-height:26px;background:repeating-linear-gradient(var(--blue-xl) 0 6px,transparent 6px 11px)}
+
+/* email */
+.seq{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.mail{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);position:relative}
+.mail .no{width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:14px;display:grid;place-items:center;margin-bottom:12px}
+.mail b{display:block;font-size:15.5px;margin-bottom:4px}
+.mail p{font-size:13.5px;color:var(--muted);line-height:1.45}
+.mail.last{border:2px solid var(--blue)}
+.exits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.exit{display:flex;gap:10px;align-items:center;font-size:14px;padding:12px 14px;border-radius:12px;background:#fff;border:1px dashed var(--sky3)}
+.exit svg{color:var(--blue)}
+.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.metric{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+.metric .ico{margin:0 auto 10px}
+.metric b{display:block;font-size:14.5px}
+.metric small{font-size:12.5px}
+.metric.star{border:2px solid var(--blue);background:var(--sky)}
+
+/* funnel */
+.funnel{display:grid;gap:10px;max-width:860px;margin:0 auto}
+.fl{margin:0 auto;border-radius:14px;padding:16px 22px;display:flex;align-items:center;gap:14px;color:#fff;font-weight:600}
+.fl small{color:rgba(255,255,255,.8);font-weight:500;margin-left:auto;font-size:13.5px;text-align:right}
+.fl svg{flex:none}
+.fl:nth-child(1){width:100%;background:#93B4FF;color:var(--ink)}.fl:nth-child(1) small{color:var(--ink2)}
+.fl:nth-child(2){width:88%;background:#5C8DF6}
+.fl:nth-child(3){width:76%;background:#3B6FEA}
+.fl:nth-child(4){width:64%;background:#1D4ED8}
+.fl:nth-child(5){width:52%;background:#12329A}
+
+/* team */
+.team{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto auto;gap:18px;align-items:center;justify-items:center;max-width:980px;margin:0 auto}
+.you{grid-column:2;grid-row:2;width:190px;height:190px;border-radius:50%;background:linear-gradient(160deg,var(--blue),var(--blue-d));color:#fff;display:grid;place-items:center;text-align:center;box-shadow:0 0 0 14px var(--sky2),0 0 0 28px var(--sky),0 20px 40px rgba(29,78,216,.3)}
+.you b{font-family:Fraunces,serif;font-size:26px;font-weight:500;display:block}
+.you small{color:#D6E2FF;font-size:13px}
+.sat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:var(--shadow);width:100%;max-width:300px}
+.sat .top{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.sat .top .ico{margin:0;width:38px;height:38px;border-radius:10px}
+.sat b{font-size:15.5px}
+.sat p{font-size:13.5px;color:var(--muted)}
+.sat.us{border:2px solid var(--blue)}
+.sat.keep{background:var(--sky);border-style:dashed}
+.t1{grid-column:1;grid-row:1}.t2{grid-column:3;grid-row:1}.t3{grid-column:1;grid-row:3}.t4{grid-column:3;grid-row:3}.t5{grid-column:1;grid-row:2}.t6{grid-column:3;grid-row:2}.t0{grid-column:2;grid-row:1}
+
+/* costs */
+.cost{display:grid;grid-template-columns:52px 1fr auto;gap:18px;align-items:center;padding:20px 24px;border-bottom:1px solid var(--line)}
+.cost:last-child{border-bottom:none}
+.cost .ico{margin:0}
+.cost b{font-size:16.5px}
+.cost p{font-size:14px;color:var(--muted);margin-top:2px}
+.cost .amt{font-family:Fraunces,serif;font-size:24px;color:var(--blue-d);text-align:right;white-space:nowrap}
+.cost .amt small{display:block;font-family:Inter,sans-serif;font-size:12px;color:var(--muted)}
+.cost .amt.txt{font-family:Inter,sans-serif;font-size:14px;font-weight:600;color:var(--ink2)}
+.costs{padding:6px 0}
+
+/* promises + next */
+.promise{display:flex;gap:16px;align-items:flex-start}
+.promise .ico{margin:0}
+.promise b{display:block;font-size:16.5px;margin-bottom:3px}
+.promise p{font-size:14.5px;color:var(--muted)}
+.next{counter-reset:nx;display:grid;gap:12px}
+.nx{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+.nx::before{counter-increment:nx;content:counter(nx);width:34px;height:34px;border-radius:50%;background:var(--sky2);color:var(--blue-d);font-weight:700;display:grid;place-items:center;flex:none}
+.nx b{font-size:15.5px}.nx p{font-size:14px;color:var(--muted)}
+.closer{background:linear-gradient(160deg,var(--blue),var(--blue-d));color:#fff;border-radius:24px;padding:40px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 24px 50px rgba(29,78,216,.3)}
+.closer h2{color:#fff}
+.closer p{color:#D6E2FF}
+.care{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start}
+
+footer{padding:26px 56px;font-size:13px;color:var(--soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:1100px){
+  .bp{grid-template-columns:1fr;gap:10px}.bp .arrow{transform:rotate(90deg);height:40px}
+  .road{grid-template-columns:1fr;gap:12px}.gate{flex-direction:row}.gate span{writing-mode:horizontal-tb;transform:none;margin:0 0 0 10px}
+  .flow{grid-auto-flow:row}.step{margin:0 0 26px}.step::after{right:50%;top:auto;bottom:-24px;transform:translateX(50%) rotate(90deg)}
+  .appr{grid-template-columns:1fr}.loop{display:none}
+  .lib,.asst,.zones,.care{grid-template-columns:1fr}.fork{display:none}.gatebox{padding:20px}
+  .seq,.metrics{grid-template-columns:1fr 1fr}.exits{grid-template-columns:1fr}
+  .g4{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr}
+  .team{grid-template-columns:1fr}.team>*{grid-column:1 !important;grid-row:auto !important}
+  .slide{padding:96px 24px 56px}.dots{display:none}
+}
+@media (max-width:640px){.g2,.g4,.seq,.metrics{grid-template-columns:1fr}.mock-body{grid-template-columns:1fr}.mock-side{display:none}.cost{grid-template-columns:44px 1fr}.cost .amt{grid-column:2;text-align:left}}
+@media print{.topbar,.dots,.pager{display:none}.slide{min-height:auto;page-break-after:always}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="video" viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2.5"/><path d="M16 10l5-3v10l-5-3"/></symbol>
+  <symbol id="doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+  <symbol id="chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+  <symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="bot" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9.5 16.5h5"/></symbol>
+  <symbol id="lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="clip" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 9.5l3 2-3 2z"/></symbol>
+  <symbol id="cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17M9 15l2 2 4-4"/></symbol>
+  <symbol id="users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.8"/><path d="M16.5 14.2A5.5 5.5 0 0 1 21.5 20"/></symbol>
+  <symbol id="user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+  <symbol id="server" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="7" rx="2"/><rect x="3.5" y="13" width="17" height="7" rx="2"/><path d="M7.5 7.5h.01M7.5 16.5h.01"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+  <symbol id="edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></symbol>
+  <symbol id="eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="ad" viewBox="0 0 24 24"><path d="M4 10v4a1 1 0 0 0 1 1h2l6 4V5L7 9H5a1 1 0 0 0-1 1z"/><path d="M17 9a4 4 0 0 1 0 6M19.5 6.5a8 8 0 0 1 0 11"/></symbol>
+  <symbol id="insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></symbol>
+  <symbol id="pen" viewBox="0 0 24 24"><path d="M3 21c3-1 5-3 6-6l8-8a2.1 2.1 0 0 0-3-3l-8 8c-3 1-5 3-6 6z"/></symbol>
+  <symbol id="mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
+  <symbol id="tag" viewBox="0 0 24 24"><path d="M3 12V4.5A1.5 1.5 0 0 1 4.5 3H12l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.3"/></symbol>
+  <symbol id="refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.5 4.5L20 16M20 20v-4h-4"/></symbol>
+  <symbol id="wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8-1.5-1.5a4 4 0 0 0-5-5L14 2z" transform="translate(-1 0)"/></symbol>
+  <symbol id="arrow" viewBox="0 0 40 24"><path d="M2 12h32M26 5l8 7-8 7" stroke-width="2.2"/></symbol>
+  <symbol id="play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5.5 3.5-5.5 3.5z"/></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></symbol>
+  <symbol id="card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18M7 15h4"/></symbol>
+  <symbol id="cloud" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 8.5a4.8 4.8 0 0 1-.5 9.5z"/></symbol>
+  <symbol id="layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="brand"><div class="mark">A</div>Accredited AI</div>
+  <div class="doc">Your Coaching Practice Plan</div>
+</header>
+
+<nav class="dots" id="dots"></nav>
+<div class="pager"><span id="count">1 / 1</span><button id="prev" aria-label="Previous"><svg class="i" style="width:16px;height:16px"><use href="#arrow" transform="rotate(180 20 12)"/></svg></button><button id="next" aria-label="Next"><svg class="i" viewBox="0 0 40 24" style="width:18px;height:16px"><use href="#arrow"/></svg></button></div>
+
+<main>
+
+<!-- 1 COVER -->
+<section class="slide cover" data-title="Welcome">
+  <div class="wrap">
+    <div class="eyebrow">A plan for your coaching practice</div>
+    <h1>Your teaching, <em class="b">easier to find.</em><br>Your practice, <em class="b">easier to join.</em></h1>
+    <p class="lead">A phased plan to organize the knowledge you have built over decades, share your real answers with the people who need them, and open a clear path to a free consultation. Always in your voice. Always with your approval.</p>
+    <div class="pillars">
+      <div class="pill"><svg class="i"><use href="#search"/></svg>Find <i>your teaching in seconds</i></div>
+      <div class="pill"><svg class="i"><use href="#chat"/></svg>Share <i>your real answers</i></div>
+      <div class="pill"><svg class="i"><use href="#cal"/></svg>Book <i>more consultations</i></div>
+    </div>
+    <div class="cover-meta">
+      <div><svg class="i"><use href="#shield"/></svg>Privacy first</div>
+      <div><svg class="i"><use href="#check"/></svg>Nothing publishes without your approval</div>
+      <div><svg class="i"><use href="#layers"/></svg>Start small, grow in phases</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 WHAT YOU HAVE -->
+<section class="slide" data-title="What you have">
+  <div class="wrap">
+    <div class="eyebrow"><b>01</b> Where we start</div>
+    <h2>The knowledge is <em class="b">already here.</em></h2>
+    <p class="lead">You do not need to create more. You need what you have made to be easy to find, easy to share, and easy to act on.</p>
+    <div class="grid g4 mt">
+      <div class="card stat"><div class="ico"><svg class="i"><use href="#video"/></svg></div><div class="n">60+</div><div class="l">Course videos and handouts</div><div class="d">On your course platform today</div></div>
+      <div class="card stat"><div class="ico"><svg class="i"><use href="#chat"/></svg></div><div class="n">Years</div><div class="l">Of real client conversations</div><div class="d">5 to 6 text and WhatsApp exchanges a day</div></div>
+      <div class="card stat"><div class="ico"><svg class="i"><use href="#users"/></svg></div><div class="n">~30</div><div class="l">Active course clients</div><div class="d">Coached one to one, worldwide</div></div>
+      <div class="card stat"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><div class="n">~400</div><div class="l">Email contacts</div><div class="d">A warm list that is resting in Kit</div></div>
+    </div>
+    <div class="note mt"><svg class="i"><use href="#heart"/></svg><div><b>What success means:</b> more clients, not more activity. We start small, prove it works, and grow only when you are happy with the results.</div></div>
+  </div>
+</section>
+
+<!-- 3 BIG PICTURE -->
+<section class="slide" data-title="The big picture">
+  <div class="wrap">
+    <div class="eyebrow"><b>02</b> The big picture</div>
+    <h2>One source of truth, <em class="b">many ways to help.</em></h2>
+    <p class="lead">Everything flows from your own material. We organize it once, and it powers your search, your public answers, your videos and your emails.</p>
+    <div class="bp mt">
+      <div class="col">
+        <div class="colh">Your material</div>
+        <div class="chip"><svg class="i"><use href="#video"/></svg>Course videos</div>
+        <div class="chip"><svg class="i"><use href="#doc"/></svg>Handouts and PDFs</div>
+        <div class="chip"><svg class="i"><use href="#chat"/></svg>Client conversations</div>
+        <div class="chip"><svg class="i"><use href="#mail"/></svg>Your email list</div>
+      </div>
+      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="hub">
+        <div class="hubico"><svg class="i"><use href="#layers"/></svg></div>
+        <h3>Your private library and approved answers</h3>
+        <p>Organized by your teaching topics. Checked by hand. Approved by you.</p>
+      </div>
+      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="col">
+        <div class="colh">What it powers</div>
+        <div class="chip"><svg class="i"><use href="#search"/></svg>Search for you and your coaches</div>
+        <div class="chip"><svg class="i"><use href="#bot"/></svg>Answer assistant</div>
+        <div class="chip"><svg class="i"><use href="#globe"/></svg>Public Q&amp;A posts</div>
+        <div class="chip"><svg class="i"><use href="#clip"/></svg>Short video clips</div>
+        <div class="chip"><svg class="i"><use href="#mail"/></svg>A warm email sequence</div>
+      </div>
+      <div class="arrow"><svg class="i"><use href="#arrow"/></svg></div>
+      <div class="goal"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><b>Free consultation bookings</b><small>The one number that matters</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 ROADMAP -->
+<section class="slide" data-title="The phases">
+  <div class="wrap">
+    <div class="eyebrow"><b>03</b> The roadmap</div>
+    <h2>Three phases, <em class="b">each one earned.</em></h2>
+    <p class="lead">Each phase starts only after you have reviewed and approved the one before it. We set the schedule together once we have seen your material.</p>
+    <div class="road mt">
+      <div class="phase p1">
+        <div class="num">PHASE 1</div><h3>Foundation</h3>
+        <div class="why">Make your teaching findable. Prove the approach at low risk.</div>
+        <ul>
+          <li>Private, searchable teaching library</li>
+          <li>Answer assistant built only on your approved answers</li>
+          <li>A first small batch of public Q&amp;A posts</li>
+          <li>Privacy and approval process set up</li>
+        </ul>
+        <div class="foot"><span class="tag">Starts small</span></div>
+      </div>
+      <div class="gate"><div class="dia"></div><span>Your approval</span></div>
+      <div class="phase p2">
+        <div class="num">PHASE 2</div><h3>Reach</h3>
+        <div class="why">Bring your real answers to the people who need them.</div>
+        <ul>
+          <li>Full public Q&amp;A library, by topic</li>
+          <li>Reactivate your email list with a 4 to 5 email sequence</li>
+          <li>Email and Instagram automation</li>
+          <li>A clear path to book a free consultation</li>
+        </ul>
+        <div class="foot"><span class="tag">Moves bookings</span></div>
+      </div>
+      <div class="gate"><div class="dia"></div><span>Your approval</span></div>
+      <div class="phase p3">
+        <div class="num">PHASE 3</div><h3>Video</h3>
+        <div class="why">Turn your long videos into short, clear clips.</div>
+        <ul>
+          <li>Short clips cut from your existing videos</li>
+          <li>Captions and your brand on every clip</li>
+          <li>An organized, searchable clip library</li>
+          <li>A posting rhythm you choose</li>
+        </ul>
+        <div class="foot"><span class="tag">Grows visibility</span></div>
+      </div>
+      <div class="gate"><div class="dia" style="background:var(--blue-xl)"></div><span>When ready</span></div>
+      <div class="phase opt">
+        <div class="num" style="color:var(--muted)">OPTIONAL</div><h3>Growth</h3>
+        <div class="why">Only if and when you want more.</div>
+        <ul>
+          <li>Website improvements</li>
+          <li>Visibility in Google and AI search</li>
+          <li>Paid ads on Meta, Google, TikTok</li>
+          <li>Voice AI calling assistant</li>
+          <li>Email, SMS and WhatsApp campaigns</li>
+          <li>Business and marketing advice</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 LIBRARY -->
+<section class="slide" data-title="Phase 1: Your library">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 1</b> Your private teaching library</div>
+    <h2>Ask for it in your own words. <em class="b">Find it in seconds.</em></h2>
+    <div class="lib mt">
+      <div class="mock">
+        <div class="mock-bar"><div class="d"><i></i><i></i><i></i></div><div class="url"><svg class="i"><use href="#lock"/></svg>Your private teaching library</div></div>
+        <div class="mock-body">
+          <div class="mock-side">
+            <div class="h">Topics</div>
+            <div class="f"><svg class="i"><use href="#folder"/></svg>Hunger<em>12</em></div>
+            <div class="f"><svg class="i"><use href="#folder"/></svg>Choice<em>8</em></div>
+            <div class="f"><svg class="i"><use href="#folder"/></svg>Food noise<em>9</em></div>
+            <div class="f on"><svg class="i"><use href="#folder"/></svg>Emotional eating<em>14</em></div>
+            <div class="f"><svg class="i"><use href="#folder"/></svg>Eating boundaries<em>7</em></div>
+            <div class="h" style="margin-top:14px">Types</div>
+            <div class="f"><svg class="i"><use href="#video"/></svg>Videos</div>
+            <div class="f"><svg class="i"><use href="#doc"/></svg>Handouts</div>
+          </div>
+          <div class="mock-main">
+            <div class="mock-search"><svg class="i"><use href="#search"/></svg>Show me the video where I talked about emotional eating</div>
+            <div class="res"><div class="th"><svg class="i"><use href="#play"/></svg></div><div><b>Module 4: When feelings lead to eating</b><div class="meta">Video<span>12:40</span></div><div class="ex">"...notice the feeling first, before the food..."</div></div><div class="open">Play</div></div>
+            <div class="res"><div class="th"><svg class="i"><use href="#doc"/></svg></div><div><b>Handout: Emotional eating check-in</b><div class="meta">PDF<span>Page 3</span></div></div><div class="open">Open</div></div>
+            <div class="res"><div class="th"><svg class="i"><use href="#play"/></svg></div><div><b>Live session: Stress and evening snacking</b><div class="meta">Video<span>31:05</span></div></div><div class="open">Play</div></div>
+          </div>
+        </div>
+        <div class="mock-cap">Illustration with sample content</div>
+      </div>
+      <div>
+        <ul class="ticks">
+          <li><span><b>One private link with a login.</b> Nothing to install. Nothing technical to learn.</span></li>
+          <li><span><b>Search by words or by meaning.</b> It finds the right idea even when the wording is different.</span></li>
+          <li><span><b>Lands on the exact moment.</b> Video timestamps and PDF page numbers.</span></li>
+          <li><span><b>Folders by your teaching topics.</b> One file can sit in many folders without copies.</span></li>
+          <li><span><b>Open everything in place.</b> Play video and audio, read PDFs and documents, view images, download originals.</span></li>
+          <li><span><b>For you first,</b> and later for the coaches you train, with the access you choose.</span></li>
+        </ul>
+        <div class="mt-s"><a class="btn" href="https://allenanant.github.io/accredited-library-demo/" target="_blank" rel="noopener"><svg class="i"><use href="#eye"/></svg>See the sample library</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 HOW LIBRARY IS BUILT -->
+<section class="slide" data-title="How we build it">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 1</b> How we build it</div>
+    <h2>We do the technical work. <em class="b">You just use it.</em></h2>
+    <p class="lead">Your course material is processed on our own secure computers with locally run tools. It is not sent to outside AI services.</p>
+    <div class="flow mt">
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#folder"/></svg></div><b>Gather</b><p>We collect your course files, working with your platform contractor.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#mic"/></svg></div><b>Transcribe and read</b><p>Videos get timestamped transcripts. PDFs and scans get their text read.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#tag"/></svg></div><b>Tag and index</b><p>Topics, keywords and phrases on every file and section.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#eye"/></svg></div><b>Check by hand</b><p>A person checks every file, transcript, tag, playback and search.</p></div>
+      <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#lock"/></svg></div><b>Go live</b><p>One secure link. You test it with us before anything is final.</p></div>
+    </div>
+    <div class="grid g3 mt">
+      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>New material later</h3><p class="small">Send us the files. We process, tag, add them to folders and check they can be found and opened.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#wrench"/></svg></div><h3>If something breaks</h3><p class="small">Tell us. We investigate and fix it. Anything bigger, like moving servers, is explained and agreed first.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#shield"/></svg></div><h3>Safe by design</h3><p class="small">Login checks on every file, HTTPS, encrypted storage and backups, two-step login for admins, virus scans, tested restores.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 ASSISTANT -->
+<section class="slide" data-title="Answer assistant">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 1</b> The answer assistant</div>
+    <h2>It answers with <em class="b">your words,</em> or not at all.</h2>
+    <p class="lead">The assistant only gives answers you have approved. It never searches the internet and never makes things up.</p>
+    <div class="asst mt">
+      <div class="kb">
+        <h3>Your approved knowledge base</h3>
+        <p>Your real questions and answers, grouped by topic, each one approved by you.</p>
+        <div class="rows">
+          <div><svg class="i"><use href="#check"/></svg>Only your own answers</div>
+          <div><svg class="i"><use href="#check"/></svg>No internet, no outside sources</div>
+          <div><svg class="i"><use href="#check"/></svg>Gaps are flagged to you, never invented</div>
+        </div>
+      </div>
+      <div class="fork"><svg viewBox="0 0 64 180" fill="none" stroke="#93B4FF" stroke-width="2.2" stroke-linecap="round"><path d="M2 90h22c14 0 14-55 30-55h6M24 90c14 0 14 55 30 55h6"/><path d="M54 29l7 6-7 6M54 139l7 6-7 6"/></svg></div>
+      <div class="split">
+        <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>Inside: you and your coaches</h3></div><p>Searches your full course library and approved answers. Behind a login.</p></div>
+        <div class="aud"><div class="top"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><h3>Outside: your website visitors</h3></div><p>Uses only a smaller set of answers you have cleared for the public. Points people to a free consultation.</p></div>
+      </div>
+    </div>
+    <div class="grid g2 mt" style="align-items:center">
+      <div class="chat">
+        <div class="bub u">Is it normal to feel out of control around food at night?</div>
+        <div class="bub b"><b>From your approved answers:</b> a short answer in your own words, plus a link to the related lesson.</div>
+        <div class="bub u">Can you recommend a diet pill?</div>
+        <div class="bub b">I don't have an approved answer for that. Would you like to book a free consultation?</div>
+      </div>
+      <div class="card"><h3>Tested before it goes live</h3><ul class="ticks mt-s">
+        <li>Every approved answer, and rephrased versions of each question</li>
+        <li>Off-topic and unclear questions, which it should politely decline</li>
+        <li>Trick messages that try to make it break its rules</li>
+        <li>It can never show private client conversations</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 APPROVAL -->
+<section class="slide" data-title="Your approval">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 1</b> Public Q&amp;A posts</div>
+    <h2>Every post passes <em class="b">two gates:</em> privacy, then you.</h2>
+    <p class="lead">We turn your real answers into website posts. Nothing goes out unless it is privacy-cleared and you have approved that exact version.</p>
+    <div class="appr mt">
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#chat"/></svg></div><b>Real conversation</b><p>Your actual answer to a real client question.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#shield"/></svg></div><b>Privacy gate</b><p>The client's consent, or enough changed that nobody can be identified. Unsure? It is held back.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#doc"/></svg></div><b>Word draft</b><p>Small batches. Each post numbered and versioned. No raw chats inside.</p></div>
+      <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#pen"/></svg></div><b>You decide</b><div class="choices"><span class="c-ok">Approve</span><span class="c-ch">Changes needed</span><span class="c-no">Do not use</span></div></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#globe"/></svg></div><b>Published</b><p>Your approval is recorded. Your website contractor publishes it.</p></div>
+    </div>
+    <div class="loop"><span>Changes needed: we revise it and send it back to you</span></div>
+    <div class="grid g3 mt">
+      <div class="note"><svg class="i"><use href="#user"/></svg><div>Removing a name is <b>not</b> enough. The answer can reveal the question, so we check every detail.</div></div>
+      <div class="note"><svg class="i"><use href="#check"/></svg><div>Silence is <b>not</b> approval. A "looks fine" on the whole batch is not either. Each post is approved on its own.</div></div>
+      <div class="note"><svg class="i"><use href="#edit"/></svg><div>Any edit after approval, even small, comes <b>back to you</b> before it is published.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 PRIVACY -->
+<section class="slide" data-title="Privacy">
+  <div class="wrap">
+    <div class="eyebrow"><b>All phases</b> Privacy</div>
+    <h2>Private conversations <em class="b">stay private.</em></h2>
+    <p class="lead">Your clients trust you with personal things. We keep their conversations in a separate, locked-down zone that never touches the cloud.</p>
+    <div class="zones mt">
+      <div class="zone priv">
+        <div class="zh"><div class="ico"><svg class="i"><use href="#lock"/></svg></div><h3>Private zone</h3></div>
+        <p>On our own secure computers only</p>
+        <div class="items">
+          <div><svg class="i"><use href="#chat"/></svg>Client text and WhatsApp conversations</div>
+          <div><svg class="i"><use href="#layers"/></svg>Working knowledge base</div>
+          <div><svg class="i"><use href="#doc"/></svg>Drafts before privacy clearance</div>
+        </div>
+        <div class="rules"><span>Local AI only</span><span>No cloud AI</span><span>No cloud sync</span><span>Encrypted</span><span>Authorized staff only</span></div>
+      </div>
+      <div class="gatebox"><div class="ln"></div><div class="lock"><svg class="i"><use href="#shield"/></svg></div><b>Only cleared, approved content crosses</b><small>Consent or de-identified, then approved by you</small><div class="ln"></div></div>
+      <div class="zone host">
+        <div class="zh"><div class="ico"><svg class="i"><use href="#server"/></svg></div><h3>Hosted zone</h3></div>
+        <p>Only what is needed to run each service</p>
+        <div class="items">
+          <div><svg class="i"><use href="#video"/></svg>Course library (no client data, behind a login)</div>
+          <div><svg class="i"><use href="#mail"/></svg>Email list on your email platform</div>
+          <div><svg class="i"><use href="#globe"/></svg>Approved Q&amp;A posts on your website</div>
+        </div>
+        <div class="rules"><span>HTTPS</span><span>Encrypted storage</span><span>Access control</span><span>Tested backups</span></div>
+      </div>
+    </div>
+    <div class="grid g3 mt">
+      <div class="card"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><h3>NDA first</h3><p class="small">We sign a confidentiality agreement before we see any private material. We never sell or share it.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#users"/></svg></div><h3>Need to know</h3><p class="small">Only the team members who need a file for the work can open it.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#refresh"/></svg></div><h3>Clean exit</h3><p class="small">When we finish, we return your work, remove our access, delete our copies, and confirm it in writing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 EMAIL -->
+<section class="slide" data-title="Phase 2: Email">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 2</b> Wake up your email list</div>
+    <h2>A warm hello to <em class="b">400 people</em> who already know you.</h2>
+    <p class="lead">We start with your existing Kit account. We move to another tool only if you agree. We clean the list, keep every unsubscribe, and start with a small group.</p>
+    <div class="seq mt">
+      <div class="mail"><div class="no">1</div><b>Hello again</b><p>A personal reintroduction from you.</p></div>
+      <div class="mail"><div class="no">2</div><b>A teaching point</b><p>Something useful from your approved material.</p></div>
+      <div class="mail"><div class="no">3</div><b>A real answer</b><p>An approved Q&amp;A or short clip on a common worry.</p></div>
+      <div class="mail"><div class="no">4</div><b>The consultation</b><p>What a free consultation with you involves.</p></div>
+      <div class="mail last"><div class="no">5</div><b>A gentle invite</b><p>A warm, no-pressure invitation to book.</p></div>
+    </div>
+    <div class="exits">
+      <div class="exit"><svg class="i"><use href="#pen"/></svg>You approve every email before it is sent</div>
+      <div class="exit"><svg class="i"><use href="#cal"/></svg>Someone books? They leave the sequence</div>
+      <div class="exit"><svg class="i"><use href="#mail"/></svg>Someone unsubscribes? Marketing stops</div>
+    </div>
+    <h3 class="mt">How we measure it</h3>
+    <div class="metrics mt-s">
+      <div class="metric"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><b>Emails delivered</b><small>Reached the inbox</small></div>
+      <div class="metric"><div class="ico"><svg class="i"><use href="#search"/></svg></div><b>Unique clicks</b><small>Real interest</small></div>
+      <div class="metric star"><div class="ico"><svg class="i"><use href="#cal"/></svg></div><b>Completed bookings</b><small>The main number</small></div>
+      <div class="metric"><div class="ico"><svg class="i"><use href="#layers"/></svg></div><b>Booking rate</b><small>Bookings per email delivered</small></div>
+      <div class="metric"><div class="ico"><svg class="i"><use href="#heart"/></svg></div><b>New clients</b><small>Where you can share it</small></div>
+    </div>
+    <p class="small mt-s">We match bookings against your calendar. Duplicates and cancellations are not counted. Opens are a side signal only.</p>
+  </div>
+</section>
+
+<!-- 11 PATH TO CONSULTATION -->
+<section class="slide" data-title="Path to booking">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 2</b> The path to a consultation</div>
+    <h2>Every step leads to <em class="b">one easy next step.</em></h2>
+    <p class="lead">We connect your approved content to a clear booking route, and test it from start to finish with your website contractor.</p>
+    <div class="funnel mt">
+      <div class="fl"><svg class="i"><use href="#globe"/></svg>People discover your real answers<small>Q&amp;A posts, clips, Instagram, emails</small></div>
+      <div class="fl"><svg class="i"><use href="#heart"/></svg>They see how you help<small>Your website and consultation page</small></div>
+      <div class="fl"><svg class="i"><use href="#cal"/></svg>They book a free consultation<small>Your scheduling tool</small></div>
+      <div class="fl"><svg class="i"><use href="#chat"/></svg>They meet you<small>Attendance tracked</small></div>
+      <div class="fl"><svg class="i"><use href="#check"/></svg>They become clients<small>The goal</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 VIDEO -->
+<section class="slide" data-title="Phase 3: Video">
+  <div class="wrap">
+    <div class="eyebrow"><b>Phase 3</b> Short videos</div>
+    <h2>Short clips that <em class="b">keep your meaning.</em></h2>
+    <p class="lead">Your long videos hold dozens of strong moments. Our editors turn them into complete, clear clips: a real opening, one full idea, a natural ending.</p>
+    <div class="flow mt">
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#eye"/></svg></div><b>Watch</b><p>We watch every video in full first.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#tag"/></svg></div><b>Map</b><p>Topics, questions and strong moments, with timestamps.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#spark"/></svg></div><b>Shortlist</b><p>Local tools suggest passages. Editors choose.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#clip"/></svg></div><b>Cut</b><p>Complete clips with full context.</p></div>
+      <div class="step"><div class="k"></div><div class="ico"><svg class="i"><use href="#pen"/></svg></div><b>Brand</b><p>Captions, fonts, colors and framing.</p></div>
+      <div class="step hl"><div class="k"></div><div class="ico"><svg class="i"><use href="#check"/></svg></div><b>You approve</b><p>Then your Instagram poster publishes.</p></div>
+    </div>
+    <div class="grid g3 mt">
+      <div class="card"><div class="ico"><svg class="i"><use href="#layers"/></svg></div><h3>An organized clip library</h3><p class="small">Every clip carries a title, topic, subtopic, source video, timestamps, version and approval status.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#clip"/></svg></div><h3>Up to 30 clips a week</h3><p class="small">Once footage and brand guidelines are in. More is possible. The rhythm is always yours to set.</p></div>
+      <div class="card"><div class="ico"><svg class="i"><use href="#video"/></svg></div><h3>One small ask</h3><p class="small">Keep your original video files after posting. Instagram copies are compressed and lose quality.</p></div>
+    </div>
+    <p class="small mt-s">Editing tools: Adobe Premiere Pro, Adobe After Effects, DaVinci Resolve.</p>
+  </div>
+</section>
+
+<!-- 13 TEAM -->
+<section class="slide" data-title="Your team">
+  <div class="wrap">
+    <div class="eyebrow"><b>All phases</b> Working together</div>
+    <h2>We work with the people <em class="b">you already trust.</em></h2>
+    <p class="lead">We add to your team. We do not replace anyone or step into their role.</p>
+    <div class="team mt">
+      <div class="sat us t0"><div class="top"><div class="ico"><svg class="i"><use href="#spark"/></svg></div><b>Accredited AI</b></div><p>Plans, builds and coordinates. Brings every draft to you for approval.</p></div>
+      <div class="sat t1"><div class="top"><div class="ico"><svg class="i"><use href="#globe"/></svg></div><b>Website contractor</b></div><p>Makes site and course platform changes. We coordinate with them.</p></div>
+      <div class="sat t2"><div class="top"><div class="ico"><svg class="i"><use href="#insta"/></svg></div><b>Instagram poster</b></div><p>Keeps posting day to day. We hand over approved clips.</p></div>
+      <div class="you"><div><b>You</b><small>The final word on<br>your teaching and voice</small></div></div>
+      <div class="sat t5"><div class="top"><div class="ico"><svg class="i"><use href="#mic"/></svg></div><b>PR and media contact</b></div><p>Keeps podcasts and press. We stay out of this lane.</p></div>
+      <div class="sat keep t6"><div class="top"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><b>Your paper cards</b></div><p>Your hand-to-paper practice stays exactly as it is.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 COSTS -->
+<section class="slide" data-title="Running costs">
+  <div class="wrap">
+    <div class="eyebrow"><b>Good to know</b> Tools and running costs</div>
+    <h2>Tools you own, <em class="b">paid directly.</em></h2>
+    <p class="lead">These are third-party costs. The accounts are yours. We confirm each provider and budget with you before anything is bought.</p>
+    <div class="card costs mt">
+      <div class="cost"><div class="ico"><svg class="i"><use href="#server"/></svg></div><div><b>Secure hosting and file storage</b><p>A small private server for the library, plus private storage for your files. Planned on Hetzner Cloud and Cloudflare R2. Based on a few users, 100 to 500 GB of files and modest traffic. Confirmed after we check your file sizes.</p></div><div class="amt">$25 to $50<small>per month, estimate</small></div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#mail"/></svg></div><div><b>Email platform</b><p>Your existing Kit account first. Brevo or Mailchimp only if we agree a move is better.</p></div><div class="amt txt">Provider's plan price</div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#insta"/></svg></div><div><b>Instagram and automation tools</b><p>Chosen during setup, on accounts you own.</p></div><div class="amt txt">Confirmed at setup</div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#ad"/></svg></div><div><b>Advertising budget</b><span class="tag" style="margin-left:8px">Optional</span><p>Only if you choose paid ads. Paid straight to Meta, Google or TikTok.</p></div><div class="amt txt">You set the budget</div></div>
+      <div class="cost"><div class="ico"><svg class="i"><use href="#phone"/></svg></div><div><b>Voice AI calling</b><span class="tag" style="margin-left:8px">Optional</span><p>Pay per minute of calls, about $150 to $200 per 1,000 minutes. Phone numbers, add-ons and taxes extra.</p></div><div class="amt">$0.15 to $0.20<small>per call minute</small></div></div>
+    </div>
+    <p class="small mt-s">Hosting is a planning estimate, not a fixed all-inclusive price. Voice AI runs on cloud providers, so it sits outside the private, local-only zone.</p>
+  </div>
+</section>
+
+<!-- 15 PROMISES -->
+<section class="slide" data-title="Our promises">
+  <div class="wrap">
+    <div class="eyebrow"><b>Always</b> Our promises</div>
+    <h2>The lines we <em class="b">never cross.</em></h2>
+    <div class="grid g2 mt">
+      <div class="card promise"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><div><b>Nothing publishes in your voice without you</b><p>Every post, email and clip is approved by you first. No exceptions.</p></div></div>
+      <div class="card promise"><div class="ico"><svg class="i"><use href="#heart"/></svg></div><div><b>It is always really you</b><p>Your real material, organized with AI help. Nothing invented, nothing that reads as "not really you".</p></div></div>
+      <div class="card promise"><div class="ico"><svg class="i"><use href="#lock"/></svg></div><div><b>The course library holds no client data</b><p>It stays internal, for you and your coaches only.</p></div></div>
+      <div class="card promise"><div class="ico"><svg class="i"><use href="#shield"/></svg></div><div><b>Every public answer is protected</b><p>Consent from the client, or changed enough that nobody can be identified.</p></div></div>
+      <div class="card promise"><div class="ico"><svg class="i"><use href="#pen"/></svg></div><div><b>Your analog practice stays analog</b><p>We will not digitize your paper recording cards.</p></div></div>
+      <div class="card promise"><div class="ico"><svg class="i"><use href="#users"/></svg></div><div><b>We respect your team</b><p>We coordinate with your contractor and poster, and stay out of your PR contact's lane.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 16 NEXT -->
+<section class="slide" data-title="Next steps">
+  <div class="wrap">
+    <div class="eyebrow"><b>Next</b> Our first working session</div>
+    <div class="care">
+      <div>
+        <h2>Let's start with <em class="b">one small, useful thing.</em></h2>
+        <div class="next mt">
+          <div class="nx"><div><b>Sign the confidentiality agreement</b><p>Before we see any private material.</p></div></div>
+          <div class="nx"><div><b>Pick a sample of course material</b><p>A handful of videos and handouts for the pilot library.</p></div></div>
+          <div class="nx"><div><b>Choose the first Q&amp;A conversations</b><p>Which channels, and how they can be exported.</p></div></div>
+          <div class="nx"><div><b>Draw the public and private line</b><p>What the website assistant may use, and what stays inside.</p></div></div>
+          <div class="nx"><div><b>Set review days that suit you</b><p>Then we agree a practical schedule together.</p></div></div>
+        </div>
+      </div>
+      <div class="closer">
+        <div class="eyebrow" style="color:#BFD3FF">The only question for today</div>
+        <h2>What would you like to make useful first?</h2>
+        <p>Your library, your public answers, or your email list. We will start there, show you the result, and grow only when you are happy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer><span>Accredited AI</span><span>Prepared for discussion. Illustrations use sample content. Figures are estimates, confirmed before purchase.</span></footer>
+
+<script>
+(function(){
+  const slides=[...document.querySelectorAll('.slide')];
+  const dots=document.getElementById('dots');
+  const count=document.getElementById('count');
+  slides.forEach((s,i)=>{s.id=s.id||('s'+(i+1));const a=document.createElement('a');a.href='#'+s.id;a.innerHTML='<span>'+(s.dataset.title||('Slide '+(i+1)))+'</span>';dots.appendChild(a);});
+  const links=[...dots.children];let cur=0;
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting&&e.intersectionRatio>.45){cur=slides.indexOf(e.target);links.forEach((l,j)=>l.classList.toggle('on',j===cur));count.textContent=(cur+1)+' / '+slides.length;}})},{threshold:[.45,.6]});
+  slides.forEach(s=>io.observe(s));
+  const go=i=>{i=Math.max(0,Math.min(slides.length-1,i));slides[i].scrollIntoView({behavior:'smooth'});};
+  document.getElementById('next').onclick=()=>go(cur+1);
+  document.getElementById('prev').onclick=()=>go(cur-1);
+  addEventListener('keydown',e=>{if(['ArrowDown','PageDown','ArrowRight',' '].includes(e.key)){e.preventDefault();go(cur+1)}if(['ArrowUp','PageUp','ArrowLeft'].includes(e.key)){e.preventDefault();go(cur-1)}if(e.key==='Home')go(0);if(e.key==='End')go(slides.length-1);});
+  count.textContent='1 / '+slides.length;
+})();
+</script>
+</body>
+</html>
